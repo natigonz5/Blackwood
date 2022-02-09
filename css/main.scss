@@ -1,0 +1,39 @@
+@import "./parciales/media-queries";
+@import "./parciales/header";
+@import "./parciales/footer";
+@import "./parciales/home";
+@import "./parciales/nosotros";
+@import "./parciales/productos";
+@import "./parciales/materiales";
+@import "./parciales/contacto";
+@import "./parciales/suscripcion";
+
+
+/*pagina principal y parametros generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #161512;
+
+    &--intro{
+    background-image: url(../multimedia/imagen/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    }
+
+    &--nosotros{
+    background-image: url(../multimedia/imagen/nosotrosimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,597 @@
+
+
+.header__nav{
+    z-index: 5;
+    background: linear-gradient(110deg, #000000, #242424, #000000); 
+    opacity: 90%;
+    width: 100%;
+    position: fixed;
+    height: 5%;
+    top: 0%;
+    box-shadow: 0px 2px 8px 5px rgba(0, 0, 0, 0.774);
+/* valores de la sombra: offset-x | offset-y | blur-radius | spread-radius | color */
+} 
+
+
+.header__logo{
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    width: 9%;
+    height: auto;
+  }
+
+
+.header__list{
+    width: 100%;
+    list-style: none;
+    color: white;
+    text-align: right;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+.header__item{
+	position: relative;
+	display: inline-block;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+}
+
+.header__link{
+	display: block;
+    padding: 0px 50px 0px 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.header__link:hover{
+    color: rgb(255, 199, 79);
+    font-weight: 500;
+    transform: scale(1.1);
+}
+
+
+.header__subList{
+	position: absolute;
+    background-color: #242424b4;
+	display: none; 
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.425);
+}
+
+.header__subItem{
+	display: block;
+    padding: 20px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+    text-align: center;
+}
+
+.header__item:hover .header__subList{
+	display: block;
+}
+
+/*INDEX bienvenidos*/
+
+
+.uno{
+    background-color: rgba(24, 24, 24, 0);
+    height: 850px;
+    width: 100%;
+    margin: auto;
+}
+
+.dos{
+    padding-top: 100px;
+    padding-bottom: 350px;
+    width: 45%;
+    background-color: #161512c0;
+    height: 840px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.575);
+    border-width: 0px 1px 0px 0px;
+
+}
+
+section article h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 90px;
+    padding-left: 100px;
+    padding-top: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    max-width: 600px;
+}
+
+
+section article h2{
+    color: rgb(219, 219, 219);
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+section article #boton1{
+    color: rgb(255, 255, 255);
+    height: 40px;
+    width: 120px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: whitesmoke;
+    border: 1px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(110deg, #2b2b17, #16160e); 
+    letter-spacing: 2px;
+    transition: width 0.5s;
+}
+
+section article #boton1:after {
+    content: ' \2192';
+    padding-left: 5px;
+}
+
+section article #boton1:hover{
+    font-size: medium;
+    background: linear-gradient(110deg, #686831, #252512);
+    width: 180px;
+}
+
+/*INDEX quienes somos*/
+
+
+.titulo1{
+    margin-top: 80px;
+    color: white;
+    font-size: 24px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+
+.parrafoDescrip{
+    color: rgb(255, 255, 255);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#contenedor {
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    
+ 
+}
+
+.iconosImg {
+    text-align: center;
+}
+
+.desc {
+    padding-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+/*INDEX video*/
+
+video{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 20px 0px #000000;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+/*Pie de página*/
+
+section footer{
+    background: linear-gradient(90deg, #0e0d0d, #242424, #0e0d0d); 
+    box-shadow: 0px -3px 12px 1px rgba(0, 0, 0, 0.774);
+    opacity: 90%;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    width: 100%;
+    text-align: left;
+	padding: 55px 100px;
+    box-sizing: border-box;
+    
+}
+
+section footer .footerIzq,
+section footer .footerCentro,
+section footer .footerDer{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer izq */
+
+section footer .footerIzq{
+	width: 40%;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+section footer .footerIconos{
+	color:  #ffffff;
+	margin: 20px 0 18px;
+	padding: 0;
+
+}
+
+section footer .footerIconos a{
+	display:inline-block;
+
+}
+
+.footerIconos img:hover{
+    transform:scale(1.1);
+}
+
+section footer .footerBlackwood{
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Footer centro */ 
+
+section footer .footerCentro{
+    width: 35%;
+}
+
+section footer .footerCentro img{
+	text-align: center;
+	vertical-align: middle;
+    margin-right: 15px;
+}
+
+section footer .footerCentro p{
+    display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* Footer derecha */ 
+
+section footer .footerDer{
+    width: 22%;
+}
+
+section footer .footerAcercaDe{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+section footer .footerAcercaDe span{
+	display: block;
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Seccion contactos - formulario*/
+
+section form{
+    padding-top: 150px;
+}
+fieldset{
+    border: 0px;
+    text-align: center;
+}
+
+fieldset legend{
+    color: rgb(255, 255, 255);
+    text-align:center; 
+    margin-bottom: 30px;
+    text-decoration-style: solid;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+form{
+    text-align:center;
+}
+
+.relleno{
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 10px;
+    color: rgb(247, 247, 247);
+    padding: 7px 7px 7px 7px;
+    margin: 5px;
+    border-style: solid;
+    font-family: 'Poppins', sans-serif;
+    width: 16%;
+    border-color:#76CCB1;
+    border-width: 1px;
+}
+
+textarea{
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 7px 7px 7px 7px;
+    width: 16%;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-style: solid;
+    font-family: 'Poppins', sans-serif;
+    border-color:#75ccb1;
+    border-width: 1px;
+    margin: 10px;
+}
+
+.check{
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#notificacion{
+    margin-top: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.botonform{
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 20px;
+    padding: 7px 7px 7px 7px;
+    width: 8%;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-style: solid;
+    font-family: 'Poppins', sans-serif;
+    border-color:#76CCB1;
+    border-width: 1px;
+}
+
+/* Seccion Nosotros*/
+
+#fondo2{
+    margin: 0;   
+    background-image: url(../multimedia/imagen/nosotrosimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+}
+
+.tres{
+    background-color: #181818de;
+    height: 730px;
+    width: 60%;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
+}
+
+#historia{
+    text-align: center;
+    font-size: 40px;
+    padding-left: 0;
+    font-weight: 500;
+    text-shadow: 0px 0px 0px #000000;
+    padding-top: 100px;
+    letter-spacing: 20px;
+    min-width: 100%;
+}
+
+#historiaTexto{
+    text-align: center;
+    margin: auto;
+    max-width: 72%;
+    margin-top: 50px;
+    font-family: 'Nunito', sans-serif; 
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#historiaTexto .resalta{
+    color: hsl(161, 46%, 63%);;
+    font-weight: 600;
+}
+
+
+/*Seccion Productos*/
+
+#Silla img{
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    width: auto;
+
+}
+
+.renova{
+    min-width: 43%;
+    font-size: 60px;
+    padding-left: 15%;
+    font-weight: 500;
+    text-shadow: 0px 0px 0px #000000;
+    letter-spacing: 25px;
+
+}
+
+.renovaDesc{
+    width: 44%;
+    font-size: 24px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2%;
+    padding-left: 15%;
+    letter-spacing: 1px;
+}
+
+#ProdRec{
+    color: #76CCB1;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#contenedorProd {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.ProdImg {
+    text-align: center;
+    padding: 30px;
+}
+
+.ProdImg Img{
+    border-radius: 20px;
+    width: 400px;
+}
+
+.desc {
+    padding-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+
+/*Seccion Materiales*/
+
+.grid{
+    row-gap: 30px;
+    width: 1100px;
+    margin: auto;
+    margin-top: 150px;
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    grid-template-columns: 500px 600px;
+    grid-template-rows: repeat(4, 384px);
+    border-color:#75ccb1;
+
+}
+
+.grid >div{
+    background-color: black;
+    border-radius:20px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.item2, .item3, .item6, .item7{
+    padding-left: 60px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    width: 600px;
+    border:1px solid #75ccb1;
+}
+
+.item2, .item6{
+    box-shadow: -5px 0px 8px 0px rgba(0, 0, 0, 0.493);
+
+}
+
+.subitem1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: rgb(156, 156, 156);
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.item2 .subitem1{
+    width: 68%;
+}
+
+.item3 .subitem1{
+    width: 70%;
+}
+
+.item6 .subitem1{
+    width: 69%;
+}
+
+.item7 .subitem1{
+    width: 64%;
+}
+
+.info{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.info:hover{
+    color: rgb(255, 199, 79);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+
+
+/*MEDIA QUERIE*/
+
+@media only screen and (max-width: 768px) {
+    body {
+            background-color: #000000;
+      }
+}

@@ -1,0 +1,88 @@
+@import "./variables";
+
+.header{
+    .header__nav{
+        z-index: 5;
+        background: linear-gradient(110deg, #000000, #242424, #000000); 
+        opacity: 90%;
+        width: 100%;
+        position: fixed;
+        height: 5%;
+        top: 0%;
+        box-shadow: 0px 2px 8px 5px rgba(0, 0, 0, 0.774);
+        /* valores de la sombra: offset-x | offset-y | blur-radius | spread-radius | color */
+
+
+    .header__logo{
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        width: 9%;
+        height: auto;
+    }
+
+        .header__list{
+            width: 100%;
+            list-style: none;
+            color: $blanco;
+            text-align: right;
+            text-decoration: none;
+        
+            .header__item{
+                position: relative;
+                display: inline-block;
+                padding: 14px 50px;
+                font-size: 11px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                text-align: center;
+                
+            }
+
+            .header__item:hover{
+                background-color: rgba(0, 0, 0, 0.664);
+                border-radius: 10px;
+
+            }
+
+            .header__item:hover .header__subList{
+                display: block;
+                text-align: center;
+                
+            }
+
+                .header__a{
+                    display: block;
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                }
+
+                .header__a:hover{
+                    color: rgb(255, 199, 79);
+                    font-weight: 500;
+                    transform: scale(1.1);
+                }
+
+
+                    .header__subList{
+                        left: 0px;
+                        margin-top: 15px;
+                        position: absolute;
+                        background-color: #242424b4;
+                        display: none; 
+                        border-radius: 20px;
+                        box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.425);
+                    }
+
+                        .header__subItem{
+                            display: block;
+                            padding: 25px 40px;
+                            color: rgb(255, 255, 255);
+                            text-decoration: none;
+                            text-align: center;
+                        }    
+        }
+    } 
+}

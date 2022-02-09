@@ -1,0 +1,29 @@
+.error{
+    width: 34%;
+    height: 300px;
+    background-color: black;
+    margin: auto;
+
+    .error__texto{
+        margin-top: 200px;
+        text-align: center;
+        font-family: 'Poppins', 'sans-serif';
+        color: white;
+        padding: 50px;
+
+        h1{
+            font-size: 60px;
+            letter-spacing: 10px;
+        }
+
+        p{
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        a{
+            top: 50px;
+            color: #75ccb1;
+        }
+    }
+}

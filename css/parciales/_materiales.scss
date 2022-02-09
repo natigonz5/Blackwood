@@ -1,0 +1,109 @@
+@import "./media-queries";
+
+/*MATERIALES*/
+
+.material{
+    background-color: $fondo;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+
+
+    &__titulo{
+        padding-top: 150px;
+        font-size: 60px;
+        font-weight: 500;
+        letter-spacing: 20px;
+        font-family: 'Poppins', 'sans-serif';
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__texto{
+        padding-top: 30px;
+        margin: auto;
+        max-width: 45%;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'Poppins', 'sans-serif';
+        color: white;
+    }
+}
+
+.grid{
+    row-gap: 30px;
+    width: 1100px;
+    margin: auto;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 500px 600px;
+    grid-template-rows: repeat(4, 384px);
+    border-color:#75ccb1;
+
+    img{
+        border-radius: 20px;
+    }
+
+    .grid__item {
+        background-color: black;
+        border-radius:20px;
+
+        &--2, &--3, &--6, &--7{
+        padding-left: 60px;
+        padding-top: 80px;
+        padding-bottom: 70px;
+        width: 600px;
+        border:1px solid #75ccb1;
+        }
+    
+        &--2, &--6{
+        box-shadow: -5px 0px 8px 0px rgba(0, 0, 0, 0.493);
+        }
+
+        &--2 .grid__texto{
+            width: 68%;
+        }
+        
+        &--3 .grid__texto{
+            width: 70%;
+        }
+        
+        &--6 .grid__texto{
+            width: 69%;
+        }
+        
+        &--7 .grid__texto{
+            width: 64%;
+        }
+    }
+     
+    .grid__titulo{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 25px;    
+    }
+
+    .grid__texto{
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+        color: rgb(156, 156, 156);
+        padding-top: 15px;
+        padding-bottom: 40px;
+        
+    }
+
+    .grid__info{
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    .grid__info:hover{
+        color: rgb(255, 199, 79);
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+}
+

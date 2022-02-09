@@ -1,0 +1,45 @@
+@import "./variables";
+
+
+/* NOSOTROS */ 
+
+.historia{
+    background-color: #181818de;
+    height: 700px;
+    width: 60%;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
+
+    &__titulo{
+        text-align: center;
+        font-size: 40px;
+        padding-left: 0;
+        font-weight: 500;
+        text-shadow: 0px 0px 0px #000000;
+        padding-top: 100px;
+        letter-spacing: 20px;
+        min-width: 100%;
+        font-family: 'Poppins', 'sans-serif';
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__texto{
+        text-align: center;
+        margin: auto;
+        max-width: 72%;
+        margin-top: 50px;
+        font-family: 'Nunito', sans-serif; 
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    &__texto .resalta{
+        color: $celeste;
+        font-weight: 600;
+    }
+}
+
+

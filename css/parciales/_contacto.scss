@@ -1,0 +1,93 @@
+@import "./media-queries";
+ 
+/*Seccion contactos - formulario*/
+.fondo{
+    background-color: rgba(24, 24, 24, 0);
+    height: 850px;
+    width: 100%;
+    margin: auto;
+    margin-top: 120px;
+    padding-top: 100px;
+    }
+
+    
+    .box{
+        text-align:center;
+    }
+
+        
+    .box__fieldset{
+            border: 0px;
+            text-align: center;
+    }   
+
+    .box__legend{
+        color: rgb(255, 255, 255);
+        text-align:center; 
+        margin-bottom: 30px;
+        text-decoration-style: solid;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }   
+
+    .box__relleno{
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 10px;
+    color: rgb(247, 247, 247);
+    padding: 7px 7px 7px 7px;
+    margin: 5px;
+    border-style: solid;
+    font-family: 'Poppins', sans-serif;
+    width: 16%;
+    border-color:#76CCB1;
+    border-width: 1px;
+    }    
+
+
+    .box__msj{
+        .box__area{
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 7px 7px 7px 7px;
+            width: 16%;
+            background-color: rgba(0, 0, 0, 0.836);
+            border-style: solid;
+            font-family: 'Poppins', sans-serif;
+            border-color:#75ccb1;
+            border-width: 1px;
+            margin: 10px;
+        }   
+    }    
+
+    .box__not{      
+        margin-top: 30px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        .check{
+            background-color: rgba(0, 0, 0, 0.836);
+            border-radius: 10px;
+            padding: 4px;
+        }
+    }
+
+
+    .box__botonform{
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 20px;
+        padding: 7px 7px 7px 7px;
+        width: 8%;
+        background-color: rgba(0, 0, 0, 0.836);
+        border-style: solid;
+        font-family: 'Poppins', sans-serif;
+        border-color:#76CCB1;
+        border-width: 1px;
+    }
