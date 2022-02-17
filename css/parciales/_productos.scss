@@ -19,8 +19,15 @@
         height: 950px;
         flex-direction: column-reverse;
         margin-top: 100px;
-
     }
+
+    @include movil{
+        width: 90%;
+        height: 550px;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
 
 
     .contenedor__texto{
@@ -34,6 +41,14 @@
             text-align: center;
             margin-left: 110px;
         }
+
+        @include movil{
+            width: 90%;
+            height: 54%;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: 0px;
+        }
         
         .contenedor__titulo{
             width: 83%;
@@ -42,6 +57,13 @@
             letter-spacing: 25px;
             font-family: 'Poppins', 'sans-serif';
             color: white;
+
+            @include movil{
+                width: 100%;
+                font-size: 25px;
+                letter-spacing: 15px;
+                text-align: left;
+            }
         }
         
         .contenedor__desc{
@@ -51,6 +73,12 @@
             font-family: 'Poppins', sans-serif;
             padding-top: 2%;
             letter-spacing: 1px;
+
+            @include movil{
+                width: 100%;
+                font-size: 15px;
+                text-align: left;
+            }
         }
 
 
@@ -64,6 +92,11 @@
             margin-left: 40px;
             width: 90%;
             }
+
+            @include movil{
+                margin-left: 0px;
+                width: 100%;
+                }
         }
     }
 
@@ -78,6 +111,17 @@
     margin-top: 80px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+
+    @include movil{
+        padding-top: 80px;
+        margin: auto;
+        width: 80%;
+        line-height: 32px;
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 }
 
 .contenedorProd {
@@ -94,15 +138,31 @@
         width: 80%;
         flex-direction: column;
     }
+
+    @include movil{
+        width: 80%;
+        flex-direction: column;
+        padding:0px;
+
+    }
 }
 
 .contenedorProd__img  {
     text-align: center;
     padding: 30px;
 
+    @include movil{
+        padding: 20px 5px;
+    }
+
     img{
         border-radius: 20px;
         width: 400px;
+
+        @include movil{
+            width: 250px;
+
+        }
     }
 
     .contenedorProd__texto{

@@ -8,6 +8,10 @@
     width: 100%;
     text-align: center;
 
+    @include movil{
+        height: 150px;
+    }
+
     &__titulo{
         padding-top: 150px;
         font-size: 60px;
@@ -20,7 +24,12 @@
         
         @include tablet{
             padding-top: 100px;
+        }
 
+        @include movil{
+            letter-spacing: 10px;
+            font-size: 25px;
+            padding-top: 100px;
         }
     }
 
@@ -36,6 +45,11 @@
                 
         @include tablet{
             max-width: 75%;
+        }
+
+        @include movil{
+            max-width: 90%;
+            font-size: 12px;
         }
     }
 }
@@ -55,7 +69,14 @@
         grid-template-columns: 365px 365px;
         grid-template-rows: repeat(4, 225px);
         padding-top: 50px;
+    }
 
+    @include movil{
+        width: 95%;
+        row-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 190px 190px 190px 190px;
+        padding-top: 0px;
     }
 
 
@@ -77,6 +98,16 @@
                     border-radius: 20px;            
                 }
             }
+
+            @include movil{
+                object-fit: cover;
+
+                img{
+                    width: 100%;
+                    border-radius: 20px;            
+                }
+            }
+
         }
 
         &--2, &--3, &--6, &--7{
@@ -91,10 +122,21 @@
                 padding-left: 30px;
                 padding-top: 30px;
             }
+
+            @include movil{
+                width: 100%;
+                padding-left: 20px;
+                padding-top: 15px;
+                padding-bottom: 40px;
+            }
         }
     
         &--2, &--6{
         box-shadow: -5px 0px 8px 0px rgba(0, 0, 0, 0.493);
+
+            @include movil{
+                box-shadow: 0;
+            }
         }
 
 
@@ -105,12 +147,20 @@
             @include tablet{
                 width: 87%;
             }
+
+            @include movil{
+                width: 90%;
+            }
         }
         
         &--3 .grid__texto{
             width: 70%;
 
             @include tablet{
+                width: 90%;
+            }
+
+            @include movil{
                 width: 90%;
             }
         }
@@ -121,12 +171,20 @@
             @include tablet{
                 width: 88%;
             }
+
+            @include movil{
+                width: 90%;
+            }
         }
         
         &--7 .grid__texto{
             width: 64%;
 
             @include tablet{
+                width: 90%;
+            }
+
+            @include movil{
                 width: 90%;
             }
         }
@@ -136,6 +194,12 @@
         font-family: 'Poppins', sans-serif;
         color: white;
         font-size: 25px;    
+
+        @include movil{
+            font-size: 18px;    
+            font-weight: 700;
+
+        }
     }
 
     .grid__texto{
@@ -145,6 +209,12 @@
         padding-top: 15px;
         padding-bottom: 40px;
         @include tablet{
+            height: 100px;
+            overflow: scroll;
+            margin-bottom: 10px;
+        }
+
+        @include movil{
             height: 100px;
             overflow: scroll;
             margin-bottom: 10px;
