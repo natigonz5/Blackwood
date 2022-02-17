@@ -14,7 +14,7 @@
 
         @include movil{
             width: 400px;
-            height: 3%;
+            height: 5%;
 
         }
 
@@ -24,10 +24,16 @@
         width: 9%;
         left: 100px;
 
+        @include tablet{
+            width: 15%;
+            top: 12px;
+            left: 30px;
+        }
         
         @include movil{
             width: 30%;
-            left: 50px;
+            top: 10px;
+            left: 30px;
         }
     }
 

@@ -25,9 +25,12 @@
     background-repeat: no-repeat;
     background-size: 1920px;
 
+    @include tablet{
+        width: 100%;
+    }
+
     @include movil{
         width: 100%;
-
     }
 }
 

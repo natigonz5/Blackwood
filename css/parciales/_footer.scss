@@ -15,8 +15,14 @@
     box-sizing: border-box;
 
     @include tablet{
-        width: 768px;
+        width: 100%;
         padding: 3em;
+    }
+
+    
+    @include movil{
+        width: 100%;
+        padding: 2em;
     }
 
     .footer__izq,.footer__centro,.footer__der{
@@ -33,6 +39,10 @@
         @include tablet{
             width: 35%;
             margin-right: 28px;
+        }
+
+        @include movil{
+            width: 90%;
         }
 
         .footer__iconos{
@@ -57,6 +67,11 @@
             @include tablet{
                 font-size: 15px;
             }
+
+            @include movil{
+                width: 70%;
+                font-size: 11px;
+            }
         }
     
     }
@@ -71,12 +86,23 @@
             width: 60%;
         }
 
+        @include movil{
+            padding-top: 40px;
+            width: 90%;
+        }
+
         img{
             text-align: center;
             vertical-align: middle;
             margin-right: 15px;
 
             @include tablet{
+                margin-right: 8px;
+                padding-top: 10px;
+            }
+
+            
+            @include movil{
                 margin-right: 8px;
                 padding-top: 10px;
             }
@@ -93,6 +119,11 @@
                 font-size: 15px;
             }
 
+            @include movil{
+                width: 70%;
+                font-size: 12px;
+            }
+
         }
 
     }
@@ -106,7 +137,11 @@
         @include tablet{
             width: 56%;
             padding-top: 40px;
+        }
 
+        @include movil{
+            padding-top: 40px;
+            width: 90%;
         }
 
         .footer__acerca{

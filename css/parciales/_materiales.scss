@@ -65,7 +65,9 @@
 
         &--1, &--4, &--5, &--8{
 
-
+            img{
+                border-radius: 20px;            
+            }
             
             @include tablet{
                   object-fit: cover;

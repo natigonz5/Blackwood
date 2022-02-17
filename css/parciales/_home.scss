@@ -26,11 +26,11 @@
         animation: fadeIn 2s;
 
         @include tablet{
-            width: 650px;
+            width: 90%;
         }
 
         @include movil{
-            width: 320px;
+            width: 95%;
             height: 350px;
 
         }
@@ -42,6 +42,10 @@
             font-weight: 200;
             letter-spacing: 25px;
             text-transform: uppercase;
+
+            @include tablet{
+                font-size: 60px;
+            }
 
             @include movil{
                 font-size: 25px;
@@ -120,10 +124,11 @@
     }
 
     @include movil{
+        padding-top: 20px;
         letter-spacing: 0;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 20px;
-        width: 300px;
+        width: 280px;
     }
 }
 
@@ -140,12 +145,13 @@
     @include tablet{
         margin-top: 70px;
         flex-wrap: wrap;
-        width: 650px;
+        width: 90%;
     }
 
     @include movil{
         margin-top: 30px;
-        width: 330px;
+        flex-wrap: wrap;
+        width: 50%;
     }
 
     .contenedor__iconos {
@@ -182,7 +188,7 @@
             }
 
             @include movil{
-                font-size: 12px;
+                font-size: 14px;
                 padding-top: 20px;        
             }
         }
@@ -214,6 +220,16 @@
         margin-bottom: 150px;
 
     }
+
+    @include movil{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: $alto+20px;
+        width: 95%;
+        padding: 2px;
+        margin-bottom: 150px;
+
+    }
     
     .pre__imagen{
         margin-right: 100px;
@@ -222,12 +238,26 @@
             margin-right: 0;
             margin-bottom: 80px;
         }
+
+        @include movil{
+            margin-right: 0;
+            margin-bottom: 80px;
+
+            img{
+                margin-left: 30px;
+                width: 80%;
+            }
+        }
     }
 
     .pre__texto{
         width: 450px;
         color:$blanco;
         font-family: 'Poppins', sans-serif;
+
+        @include movil{
+            width: 95%;
+        }
 
         h2{
             font-size: 40px;
@@ -238,6 +268,13 @@
 
             @include tablet{
                 text-align: center;
+            }
+
+            @include movil{
+                text-align: center;
+                font-size: 22px;
+                letter-spacing: 10px;
+
             }
         }
 
@@ -252,7 +289,9 @@
             }
 
             @include movil{
-                width: 370px;
+                font-size: 15px;
+                width: 98%;
+                text-align: center;
             }
         }
 
@@ -264,7 +303,7 @@
             }
 
             @include movil{
-                width: 370px;
+                width: 90%;
             }
 
             .pre__item{
@@ -307,12 +346,14 @@
         grid-template-rows: 500px 500px;
 
         @include tablet{
-            width: 95%;
+            width: 98%;
             grid-template-columns: auto auto auto auto auto;
         }
 
         @include movil{
-            width: 98%;
+            grid-template-columns: 100%;
+            grid-template-rows: 500px 500px 500px 500px;
+            width: 95%;
         }
     
         div {
@@ -336,6 +377,11 @@
             @include tablet{
                 grid-column: 1 / span 4;
             }
+
+            @include movil{
+                grid-column: 1 / span 1;
+                grid-row: 2;
+            }
         }
     
         .item2{
@@ -344,20 +390,36 @@
             @include tablet{
                 grid-column: 5 / span 2;
             }
+            @include movil{
+                grid-column: 1 / span 1;
+                grid-row: 1 / span 1;
+            }
         }
     
         .item3{
             grid-column: 1 / span 2;
+            @include movil{
+                grid-column: 1 / span 1;
+                grid-row: 3 / span 1;
+            }
         }
     
         .item4{
             grid-column: 3 / span 4;
+            @include movil{
+                grid-column: 1 / span 1;
+                grid-row: 4 / span 1;
+            }
         }          
     }  
 
 
 .suscribir{
     margin: 100px auto 100px;
+
+    @include movil{
+        margin-top: 50px;
+    }
 
     .suscribir__cont{
         display: flex;
@@ -379,12 +441,18 @@
         }
 
         @include movil{
-            width: 370px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 90%;
+            height: 200px;
+            padding: 10px;
+            align-self: center;
+
         }
     
     
         .suscribir__izq{
-            padding-top: 15px;
             width: 64%;
             color:$blanco;
             font-size: 18px;
@@ -394,6 +462,14 @@
             @include tablet{
                 width: 45%;
                 margin-right: 50px;
+            }
+
+            @include movil{
+                width: 100%;
+                margin-right: 50px;
+                text-align: center;
+                font-size: 15px;
+                padding-bottom: 30px;
             }
         }
     
@@ -405,6 +481,11 @@
             border-color:#76CCB1;
             border-style: solid;
             border-width: 1px;
+
+            @include movil{
+                width: 80%;
+                margin-right: 50px;
+            }
     
     
     
@@ -414,6 +495,10 @@
                 font-size: 19px;
                 font-weight: 00;
                 font-family: 'Poppins', sans-serif;
+
+                @include movil{
+                    font-size: 16px;
+                }
             }   
         }    
     }    
