@@ -12,6 +12,10 @@
         height: 950px;
     }
 
+    @include movil{
+        height: 900px;
+    }
+
 }
 
 .contacto{
@@ -28,11 +32,22 @@
         font-size: 40px;
     }
 
+    @include movil{
+        font-size: 25px;
+        letter-spacing: 10px;
+        padding-bottom: 25px;
+    }
+
 }
 
 .formulario{
     text-align:center;
     padding-top: 150px;
+
+    @include movil{
+        padding-top: 90px;
+
+    }
 }
 
 .fieldset{
@@ -54,6 +69,15 @@
     @include tablet{
         width: 50%;
     }
+
+    
+    @include movil{
+        margin-bottom: 40px;
+        width: 98%;
+        font-size: 15px;
+        letter-spacing: 3px;
+
+    }
 }
 
 
@@ -73,6 +97,11 @@
         width: 50%;
         font-size: 18px;
     }
+
+    @include movil{
+        width: 90%;
+        font-size: 18px;
+    }
 }
 
 .textarea{
@@ -90,7 +119,13 @@
     @include tablet{
         width: 50%;
         font-size: 18px;
+    }
 
+    
+    @include movil{
+        width: 90%;
+        font-size: 18px;
+        border-radius: 10px;
     }
 }
 
@@ -109,6 +144,10 @@
     letter-spacing: 3px;
 
     @include tablet{
+        font-size: 15px;
+    }
+
+    @include movil{
         font-size: 15px;
     }
 }
@@ -130,7 +169,11 @@
     @include tablet{
         width: 20%;
         font-size: 18px;
+    }
 
+    @include movil{
+        width: 50%;
+        font-size: 18px;
     }
 }
 

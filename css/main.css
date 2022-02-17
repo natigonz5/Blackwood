@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .fondo {
+    height: 900px;
+  }
+}
+
 .contacto {
   margin: auto;
   color: white;
@@ -30,9 +36,23 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contacto {
+    font-size: 25px;
+    letter-spacing: 10px;
+    padding-bottom: 25px;
+  }
+}
+
 .formulario {
   text-align: center;
   padding-top: 150px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .formulario {
+    padding-top: 90px;
+  }
 }
 
 .fieldset {
@@ -59,6 +79,15 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .legend {
+    margin-bottom: 40px;
+    width: 98%;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+}
+
 .relleno {
   background-color: rgba(0, 0, 0, 0.836);
   border-radius: 10px;
@@ -75,6 +104,13 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .relleno {
     width: 50%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .relleno {
+    width: 90%;
     font-size: 18px;
   }
 }
@@ -99,6 +135,14 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .textarea {
+    width: 90%;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+}
+
 .check {
   background-color: rgba(0, 0, 0, 0.836);
   border-radius: 10px;
@@ -115,6 +159,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #notificacion {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
   #notificacion {
     font-size: 15px;
   }
@@ -138,6 +188,13 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .botonform {
     width: 20%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .botonform {
+    width: 50%;
     font-size: 18px;
   }
 }
