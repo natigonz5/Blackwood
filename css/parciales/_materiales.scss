@@ -8,7 +8,6 @@
     width: 100%;
     text-align: center;
 
-
     &__titulo{
         padding-top: 150px;
         font-size: 60px;
@@ -17,6 +16,12 @@
         font-family: 'Poppins', 'sans-serif';
         color: white;
         text-transform: uppercase;
+
+        
+        @include tablet{
+            padding-top: 100px;
+
+        }
     }
 
     &__texto{
@@ -27,6 +32,11 @@
         font-weight: 300;
         font-family: 'Poppins', 'sans-serif';
         color: white;
+
+                
+        @include tablet{
+            max-width: 75%;
+        }
     }
 }
 
@@ -40,13 +50,30 @@
     grid-template-rows: repeat(4, 384px);
     border-color:#75ccb1;
 
-    img{
-        border-radius: 20px;
+    @include tablet{
+        width: 750px;
+        grid-template-columns: 365px 365px;
+        grid-template-rows: repeat(4, 225px);
+        padding-top: 50px;
+
     }
+
 
     .grid__item {
         background-color: black;
         border-radius:20px;
+
+        &--1, &--4, &--5, &--8{
+            
+            @include tablet{
+                  object-fit: cover;
+
+                img{
+                    width: 100%;
+                    border-radius: 20px;            
+                }
+            }
+        }
 
         &--2, &--3, &--6, &--7{
         padding-left: 60px;
@@ -54,26 +81,50 @@
         padding-bottom: 70px;
         width: 600px;
         border:1px solid #75ccb1;
+
+            @include tablet{
+                width: 370px;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
         }
     
         &--2, &--6{
         box-shadow: -5px 0px 8px 0px rgba(0, 0, 0, 0.493);
         }
 
+
+
         &--2 .grid__texto{
             width: 68%;
+
+            @include tablet{
+                width: 87%;
+            }
         }
         
         &--3 .grid__texto{
             width: 70%;
+
+            @include tablet{
+                width: 90%;
+            }
         }
         
         &--6 .grid__texto{
             width: 69%;
+
+            @include tablet{
+                width: 88%;
+            }
         }
         
         &--7 .grid__texto{
             width: 64%;
+
+            @include tablet{
+                width: 90%;
+            }
         }
     }
      
@@ -89,6 +140,12 @@
         color: rgb(156, 156, 156);
         padding-top: 15px;
         padding-bottom: 40px;
+        @include tablet{
+            height: 100px;
+            overflow: scroll;
+            margin-bottom: 10px;
+        }
+
         
     }
 

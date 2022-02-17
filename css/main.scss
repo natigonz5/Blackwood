@@ -24,7 +24,13 @@
     background-image: url(../multimedia/imagen/intro.jpg);
     background-repeat: no-repeat;
     background-size: 1920px;
+
+    @include movil{
+        width: 100%;
+
     }
+}
+
 
     &--nosotros{
     background-image: url(../multimedia/imagen/nosotrosimg.jpg);
@@ -32,8 +38,6 @@
     background-size: 1920px;
     }
 }
-
-
 
 
 

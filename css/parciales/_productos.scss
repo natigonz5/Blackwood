@@ -5,41 +5,66 @@
 
 
 .contenedor{
-    background-color: $fondo;
     height: 850px;
     width: 100%;
     margin: auto;
     margin-top: 120px;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-    .contenedor__titulo{
-        max-width: 43%;
-        font-size: 60px;
-        padding-left: 15%;
-        font-weight: 500;
-        text-shadow: 0px 0px 0px #000000;
-        letter-spacing: 25px;
-        font-family: 'Poppins', 'sans-serif';
-        color: white;
+    @include tablet{
+        width: 80%;
+        height: 950px;
+        flex-direction: column-reverse;
+        margin-top: 60px;
+
     }
-    
+
+
     .contenedor__texto{
-        width: 44%;
-        font-size: 24px;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        padding-top: 2%;
-        padding-left: 15%;
-        letter-spacing: 1px;
+        width: 35%;
+        height: 54%;
+
+        @include tablet{
+            width: 100%;
+            height: 54%;
+            margin-top: 20px;
+        }
+        
+        .contenedor__titulo{
+            width: 83%;
+            font-size: 60px;
+            font-weight: 500;
+            letter-spacing: 25px;
+            font-family: 'Poppins', 'sans-serif';
+            color: white;
+        }
+        
+        .contenedor__desc{
+            width: 85%;
+            font-size: 24px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 2%;
+            letter-spacing: 1px;
+        }
+
+
     }
 
     .contenedor__silla{
         img{
-        position: absolute;
-        right: 100px;
-        top: 80px;
+            margin-left: 0;
+            
+            @include tablet{
+            margin-left: 40px;
+            width: 90%;
+            }
         }
-    } 
+    }
+
 
 }
 
@@ -62,6 +87,11 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
+
+    @include tablet{
+        width: 80%;
+        flex-direction: column;
+    }
 }
 
 .contenedorProd__img  {
