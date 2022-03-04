@@ -103,73 +103,59 @@
 
 }
 
-#ProdRec{
-    color: $celeste;
-    font-size: 30px;
-    line-height: 70px;
-    text-align: center;
-    margin-top: 80px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
 
-    @include movil{
-        padding-top: 80px;
-        margin: auto;
-        width: 80%;
-        line-height: 32px;
-        font-size: 25px;
-        font-weight: 500;
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-}
-
-.contenedorProd {
-    width: 60%;
-    margin: auto;
-    margin-bottom: 60px;
-    padding: 40px;
+#conteiner{
+    height: 80vh;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    align-items: center;
+    background-color: black;
 
-    @include tablet{
-        width: 80%;
-        flex-direction: column;
-    }
-
-    @include movil{
-        width: 80%;
-        flex-direction: column;
-        padding:0px;
-
-    }
 }
 
-.contenedorProd__img  {
-    text-align: center;
-    padding: 30px;
+.slide{
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    filter: invert(8%);
+    filter: saturate(0);
+    box-shadow: 0 0 20px 10px hsla(0, 0%, 0%, .5);
+    border-right: 1px solid rgb(255, 255, 255);
+    transition: 0.7s ease-in-out;
+}
 
-    @include movil{
-        padding: 20px 5px;
-    }
+.slide:nth-child(1){
+    background:  url(../multimedia/imagen/a.jpg);
+    background-position: center center;
+}
 
-    img{
-        border-radius: 20px;
-        width: 400px;
+.slide:nth-child(2){
+    background:  url(../multimedia/imagen/b.jpg);
+    background-position: center center;
+}
 
-        @include movil{
-            width: 250px;
+.slide:nth-child(3){
+    background:  url(../multimedia/imagen/c.jpg);
+    background-position: center center;
+}
 
-        }
-    }
+.slide:nth-child(4){
+    background:  url(../multimedia/imagen/d.jpg);
+    background-position: center center;
+}
 
-    .contenedorProd__texto{
-        padding-top: 20px;
-        color: white;
-        font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-    }
+.slide:nth-child(5){
+    background:  url(../multimedia/imagen/e.jpg);
+    background-position: center center;
+}
+
+.slide:nth-child(6){
+    background:  url(../multimedia/imagen/f.jpg);
+    background-position: center center;
+}
+
+.slide:hover{
+    flex-grow: 3;
+    filter: invert(0);
 }
