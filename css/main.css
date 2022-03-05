@@ -199,11 +199,8 @@
   }
 }
 
-.header {
-  z-index: 2;
-}
-
 .header .navbar {
+  z-index: 5;
   background: linear-gradient(110deg, #0f0f0f, #2b2b2b, #0f0f0f);
   opacity: 90%;
   width: 100%;
@@ -560,6 +557,16 @@
   }
 }
 
+.button {
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 /*INDEX quienes somos*/
 .titulo1 {
   padding-top: 100px;
@@ -841,7 +848,7 @@
 }
 
 .pre .pre__texto .pre__lista {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -864,17 +871,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .pre .pre__texto .pre__lista .pre__item i {
-  padding-right: 20px;
+  margin-right: 20px;
+  margin-top: 2px;
 }
 
 .pre .pre__texto .pre__lista p {
+  margin-top: 10px;
   font-weight: 300;
   font-size: 16px;
 }
@@ -1262,7 +1267,7 @@
   height: 850px;
   width: 100%;
   margin: auto;
-  padding-top: 50px;
+  margin-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1286,6 +1291,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-top: 100px;
   }
 }
 
@@ -1297,6 +1303,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-top: 40px;
   }
 }
 
@@ -1368,7 +1375,6 @@
   .contenedor .contenedor__silla img {
     margin-left: 40px;
     width: 90%;
-    padding-top: 50px;
   }
 }
 
@@ -1376,83 +1382,23 @@
   .contenedor .contenedor__silla img {
     margin-left: 0px;
     width: 100%;
-    padding-top: 50px;
-  }
-}
-
-.slideshow {
-  height: 120vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slidetext {
-  width: 30%;
-  padding: 100px;
-}
-
-.slidetext h2 {
-  color: white;
-  max-width: 55%;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .slidetext {
-    width: 50%;
-    padding: 50px;
   }
 }
 
 #conteiner {
-  height: 90vh;
-  width: 60%;
+  height: 80vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  #conteiner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 90vh;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #conteiner {
-    height: 70vh;
-    width: 100%;
-  }
-}
-
 .slide {
-  height: 100%;
+  height: 80vh;
   width: 100%;
   overflow: hidden;
   -webkit-box-flex: 1;
@@ -1467,13 +1413,6 @@
   border-right: 1px solid white;
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .slide {
-    height: 40vh;
-    width: 100%;
-  }
 }
 
 .slide:nth-child(1) {
@@ -1493,6 +1432,16 @@
 
 .slide:nth-child(4) {
   background: url(../multimedia/imagen/d.jpg);
+  background-position: center center;
+}
+
+.slide:nth-child(5) {
+  background: url(../multimedia/imagen/e.jpg);
+  background-position: center center;
+}
+
+.slide:nth-child(6) {
+  background: url(../multimedia/imagen/f.jpg);
   background-position: center center;
 }
 

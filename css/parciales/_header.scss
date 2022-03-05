@@ -2,12 +2,12 @@
 
 .header{
         .navbar{
+        z-index: 5;
         background: linear-gradient(110deg, #0f0f0f, #2b2b2b, #0f0f0f); 
         opacity: 90%;
         width: 100%;
         position: fixed;
         top: 0%;
-        z-index: 1030;
         box-shadow: 0px 2px 8px 5px rgba(0, 0, 0, 0.774);
         /* valores de la sombra: offset-x | offset-y | blur-radius | spread-radius | color */
 

@@ -77,7 +77,14 @@
     }
 }
 
+.button{
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
 
+.button:hover{
+    transform: scale(1.2);
+}
 
 
 /*INDEX quienes somos*/
@@ -296,7 +303,7 @@
         }
 
         .pre__lista{
-            padding-top: 40px;
+            margin-top: 40px;
 
             @include tablet{
                 width: 500px;
@@ -309,23 +316,21 @@
             .pre__item{
                 display: flex;
                 flex-direction: row;
-                padding-top: 20px;
-                align-items: center;
-
 
             i{
-                padding-right: 20px;
+                margin-right: 20px;
+                margin-top: 2px;
                 }
 
             }
 
             p{
+                margin-top: 10px;
                 font-weight: 300;
                 font-size: 16px;
 
                 @include tablet{
                     font-size: 20px;
-
                 }
             }
 
