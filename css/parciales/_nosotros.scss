@@ -7,97 +7,99 @@
     0% {opacity:0;}
     100% {opacity:1;}
 }
-
 .historia{
-    border-radius: 10px;
-    background-color: #2525255e;
-    height: 700px;
-    width: 60%;
-    margin: auto;
-    margin-top: 120px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
-    animation: fadeIn 2s;
+    padding-top: 150px;
+    height: $alto;
 
-    @include tablet{
-        width: 85%;
-    }
-
-    
-    @include movil{
-        width: 95%;
-        height: 550px;
-    }
-
-    &__titulo{
-        text-align: center;
-        font-size: 40px;
-        padding-left: 0;
-        font-weight: 500;
-        text-shadow: 0px 0px 0px #000000;
-        padding-top: 100px;
-        letter-spacing: 20px;
-        min-width: 100%;
-        font-family: 'Poppins', 'sans-serif';
-        color: white;
-        text-transform: uppercase;
+    &__caja{
+        border-radius: 10px;
+        background-color: #2525255e;
+        height: 700px;
+        width: 60%;
+        margin: auto;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
+        animation: fadeIn 2s;
 
         @include tablet{
-            padding-top: 80px;
+            width: 85%;
         }
 
-            
+        
         @include movil{
-            padding-top: 40px;
-            font-size: 30px;
-            letter-spacing: 10px;
-        }
-    }
-
-    
-    .historia__sub{
-
-        @include tablet{
-            margin-top: 20px;
-            width: 100%;
-            height: 350px;
-            overflow: auto;
+            width: 95%;
+            height: 550px;
         }
 
-                    
-        @include movil{
-            margin-top: 0px;
-            width: 100%;
-            height: 350px;
-            overflow: auto;
-        }
-
-        .historia__texto{
+        .historia__titulo{
             text-align: center;
-            margin: auto;
-            width: 72%;
-            margin-top: 50px;
-            font-family: 'Nunito', sans-serif; 
+            font-size: 40px;
+            padding-left: 0;
+            font-weight: 500;
+            text-shadow: 0px 0px 0px #000000;
+            padding-top: 100px;
+            letter-spacing: 20px;
+            min-width: 100%;
+            font-family: 'Poppins', 'sans-serif';
             color: white;
-            font-size: 18px;
-            line-height: 30px;
+            text-transform: uppercase;
 
             @include tablet{
-                width: 85%;
+                padding-top: 80px;
             }
 
+                
             @include movil{
-                width: 91%;
-                font-size: 14px;
-                line-height: 22px;
+                padding-top: 40px;
+                font-size: 30px;
+                letter-spacing: 10px;
             }
-    
         }
+
         
-        .historia__texto .resalta{
-            color: $celeste;
-            font-weight: 600;
+        .historia__sub{
+
+            @include tablet{
+                margin-top: 20px;
+                width: 100%;
+                height: 350px;
+                overflow: auto;
+            }
+
+                        
+            @include movil{
+                margin-top: 0px;
+                width: 100%;
+                height: 350px;
+                overflow: auto;
+            }
+
+            .historia__texto{
+                text-align: center;
+                margin: auto;
+                width: 72%;
+                margin-top: 50px;
+                font-family: 'Nunito', sans-serif; 
+                color: white;
+                font-size: 18px;
+                line-height: 30px;
+
+                @include tablet{
+                    width: 85%;
+                }
+
+                @include movil{
+                    width: 91%;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+        
+            }
+            
+            .historia__texto .resalta{
+                color: $celeste;
+                font-weight: 600;
+            }
         }
+
     }
-
-
 }
