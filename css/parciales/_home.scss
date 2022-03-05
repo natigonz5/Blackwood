@@ -25,6 +25,7 @@
         height: ($alto/2)+150;
         animation: fadeIn 2s;
 
+
         @include tablet{
             width: 90%;
         }

@@ -1,8 +1,9 @@
 @import "./variables";
 
 .header{
+    z-index: 2;
+
         .navbar{
-        z-index: 5;
         background: linear-gradient(110deg, #0f0f0f, #2b2b2b, #0f0f0f); 
         opacity: 90%;
         width: 100%;

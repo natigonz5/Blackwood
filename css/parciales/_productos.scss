@@ -18,14 +18,12 @@
         width: 80%;
         height: 950px;
         flex-direction: column-reverse;
-        margin-top: 100px;
     }
 
     @include movil{
         width: 90%;
         height: 550px;
         flex-direction: column-reverse;
-        margin-top: 40px;
     }
 
 
@@ -91,11 +89,15 @@
             @include tablet{
             margin-left: 40px;
             width: 90%;
+            padding-top: 50px;
+
             }
 
             @include movil{
                 margin-left: 0px;
                 width: 100%;
+                padding-top: 50px;
+
                 }
         }
     }
@@ -111,6 +113,7 @@
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: center;
+
 }
 
 .slidetext{
@@ -119,6 +122,11 @@
     h2{
         color: $blanco;
         max-width: 55%;
+    }
+
+    @include tablet{
+        width: 50%;
+        padding: 50px;
     }
 }
 

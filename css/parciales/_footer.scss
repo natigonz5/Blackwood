@@ -92,18 +92,22 @@
 
         img{
             text-align: center;
-            vertical-align: middle;
+            vertical-align: top;
             margin-right: 15px;
+            margin-bottom: 10px;
 
             @include tablet{
                 margin-right: 8px;
                 padding-top: 10px;
+                margin-bottom: 10px;
+
             }
 
             
             @include movil{
                 margin-right: 8px;
                 padding-top: 10px;
+                margin-bottom: 10px;
             }
         }
 
@@ -113,14 +117,18 @@
             vertical-align: middle;
             margin:0;
             font-family: 'Poppins', sans-serif;
+            margin-top: 10px;
 
             @include tablet{
                 font-size: 15px;
+                margin-bottom: 10px;
             }
 
             @include movil{
                 width: 70%;
                 font-size: 12px;
+                margin-top: 18px;
+
             }
 
         }
