@@ -99,6 +99,7 @@
             @include tablet{
                 margin-right: 8px;
                 padding-top: 10px;
+                vertical-align: center;
                 margin-bottom: 10px;
 
             }
@@ -121,7 +122,7 @@
 
             @include tablet{
                 font-size: 15px;
-                margin-bottom: 10px;
+                margin-top: 22px;
             }
 
             @include movil{

@@ -380,6 +380,7 @@
   .footer .footer__centro img {
     margin-right: 8px;
     padding-top: 10px;
+    vertical-align: center;
     margin-bottom: 10px;
   }
 }
@@ -404,7 +405,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .footer .footer__centro p {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-top: 22px;
   }
 }
 
@@ -477,6 +478,7 @@
 }
 
 .intro {
+  z-index: 0;
   padding-top: 150px;
   height: 840px;
 }
@@ -497,8 +499,7 @@
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   width: 960px;
-  border: 1px solid white;
-  background-color: #6464641f;
+  background-color: #a1a1a11f;
   height: 570px;
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
@@ -1155,16 +1156,29 @@
 }
 
 .historia {
-  padding-top: 150px;
+  padding: 100px;
   height: 840px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .historia {
+    padding: 100px 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .historia {
+    padding: 100px 10px;
+  }
+}
+
 .historia__caja {
-  border-radius: 10px;
-  background-color: #2525255e;
+  padding: 80px;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background-color: #3f3f3f1a;
   height: 700px;
-  width: 60%;
-  margin: auto;
+  width: 50%;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
   -webkit-animation: fadeIn 2s;
@@ -1173,42 +1187,35 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .historia__caja {
-    width: 85%;
+    width: 95%;
+    padding: 20px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .historia__caja {
-    width: 95%;
+    width: 100%;
     height: 550px;
+    padding: 40px 15px;
   }
 }
 
 .historia__caja .historia__titulo {
-  text-align: center;
   font-size: 40px;
-  padding-left: 0;
   font-weight: 500;
   text-shadow: 0px 0px 0px #000000;
-  padding-top: 100px;
-  letter-spacing: 20px;
+  letter-spacing: 15px;
   min-width: 100%;
   font-family: 'Poppins', 'sans-serif';
   color: white;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .historia__caja .historia__titulo {
-    padding-top: 80px;
-  }
-}
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .historia__caja .historia__titulo {
-    padding-top: 40px;
     font-size: 30px;
     letter-spacing: 10px;
+    text-align: center;
   }
 }
 
@@ -1227,13 +1234,12 @@
     width: 100%;
     height: 350px;
     overflow: auto;
+    text-align: center;
   }
 }
 
 .historia__caja .historia__sub .historia__texto {
-  text-align: center;
-  margin: auto;
-  width: 72%;
+  width: 93%;
   margin-top: 50px;
   font-family: 'Nunito', sans-serif;
   color: white;
@@ -1249,7 +1255,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .historia__caja .historia__sub .historia__texto {
-    width: 91%;
+    margin-top: 30px;
+    width: 100%;
     font-size: 14px;
     line-height: 22px;
   }

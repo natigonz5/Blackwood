@@ -9,6 +9,7 @@
 }
 
 .intro{
+    z-index: 0;
     padding-top: 150px;
     height: $alto;
 
@@ -20,8 +21,7 @@
         text-align: center;
         backdrop-filter: blur(5px);
         width: ($ancho/2);
-        border: 1px solid white;
-        background-color: #6464641f;
+        background-color: #a1a1a11f;
         height: ($alto/2)+150;
         animation: fadeIn 2s;
 

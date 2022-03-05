@@ -8,50 +8,57 @@
     100% {opacity:1;}
 }
 .historia{
-    padding-top: 150px;
+    padding: 100px;
     height: $alto;
 
+    @include tablet{
+        padding: 100px 20px;
+    }
+
+    
+    @include movil{
+        padding: 100px 10px;
+    }
+
     &__caja{
-        border-radius: 10px;
-        background-color: #2525255e;
+        padding: 80px;
+        backdrop-filter: blur(6px);
+        background-color: #3f3f3f1a;
         height: 700px;
-        width: 60%;
-        margin: auto;
+        width: 50%;
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.521);
         animation: fadeIn 2s;
 
         @include tablet{
-            width: 85%;
+            width: 95%;
+            padding: 20px;
         }
 
         
         @include movil{
-            width: 95%;
+            width: 100%;
             height: 550px;
+            padding: 40px 15px;
         }
 
         .historia__titulo{
-            text-align: center;
             font-size: 40px;
-            padding-left: 0;
             font-weight: 500;
             text-shadow: 0px 0px 0px #000000;
-            padding-top: 100px;
-            letter-spacing: 20px;
+            letter-spacing: 15px;
             min-width: 100%;
             font-family: 'Poppins', 'sans-serif';
             color: white;
             text-transform: uppercase;
 
             @include tablet{
-                padding-top: 80px;
             }
 
                 
             @include movil{
-                padding-top: 40px;
                 font-size: 30px;
                 letter-spacing: 10px;
+                text-align: center;
             }
         }
 
@@ -71,12 +78,11 @@
                 width: 100%;
                 height: 350px;
                 overflow: auto;
+                text-align: center;
             }
 
             .historia__texto{
-                text-align: center;
-                margin: auto;
-                width: 72%;
+                width: 93%;
                 margin-top: 50px;
                 font-family: 'Nunito', sans-serif; 
                 color: white;
@@ -88,7 +94,8 @@
                 }
 
                 @include movil{
-                    width: 91%;
+                    margin-top: 30px;
+                    width: 100%;
                     font-size: 14px;
                     line-height: 22px;
                 }
