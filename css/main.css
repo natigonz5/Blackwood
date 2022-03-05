@@ -515,8 +515,6 @@
   font-weight: 200;
   letter-spacing: 25px;
   text-transform: uppercase;
-  -webkit-animation: fadeIn 4s;
-          animation: fadeIn 4s;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1069,6 +1067,7 @@
 }
 
 .suscribir .suscribir__cont .suscribir__izq {
+  margin-top: 17px;
   width: 64%;
   color: white;
   font-size: 18px;
@@ -1080,16 +1079,18 @@
   .suscribir .suscribir__cont .suscribir__izq {
     width: 45%;
     margin-right: 50px;
+    margin-top: 0px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .suscribir .suscribir__cont .suscribir__izq {
-    width: 100%;
+    width: 95%;
     margin-right: 50px;
     text-align: center;
     font-size: 15px;
     padding-bottom: 30px;
+    margin-top: 0px;
   }
 }
 

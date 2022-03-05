@@ -42,7 +42,6 @@
             font-weight: 200;
             letter-spacing: 25px;
             text-transform: uppercase;
-            animation: fadeIn 4s;
 
             @include tablet{
                 font-size: 60px;
@@ -453,6 +452,7 @@
     
     
         .suscribir__izq{
+            margin-top: 17px;
             width: 64%;
             color:$blanco;
             font-size: 18px;
@@ -462,14 +462,18 @@
             @include tablet{
                 width: 45%;
                 margin-right: 50px;
+                 margin-top: 0px;
+
             }
 
             @include movil{
-                width: 100%;
+                width: 95%;
                 margin-right: 50px;
                 text-align: center;
                 font-size: 15px;
                 padding-bottom: 30px;
+                margin-top: 0px;
+
             }
         }
     
