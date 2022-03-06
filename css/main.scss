@@ -21,10 +21,9 @@
     background-color: #161512;
 
     &--intro{
-    background-image: url(../multimedia/imagen/intro.jpg);
+    background-image: url(../multimedia/imagen/nuevaintro.png);
     background-repeat: no-repeat;
     background-size: 1920px;
-
         @include tablet{
             width: 100%;
         }
