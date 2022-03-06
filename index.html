@@ -17,7 +17,7 @@
 <body class="body body--intro">
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
+            <div class="container-fluid" data-aos="fade" data-aos-duration="1200">
                 <img src="./multimedia/imagen/logo-01.png" alt="logo" class="navbar-brand">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
 
     <main> <!--contenido principal-->
         <section class="intro">   <!--BIENVENIDOS-->
-            <article class="intro__caja"> 
+            <article class="intro__caja" data-aos="fade-up" data-aos-duration="1200"> 
                 <h1 class="intro__titulo">Bienvenidos</h1>
                     <h2 class="intro__subTitulo">Hace más de 70 años que nuestra pasión por la carpintería se transmite de generación en generación, en cada trabajo y cada detalle.</h2>
                 <a href="#Scroll1">
@@ -61,10 +61,10 @@
 
         <section> <!--QUIENES SOMOS-->
             <article >
-                <h3 id="Scroll1" class="titulo1">¿Quiénes somos?</h3>
-                    <p class="parrafoDescrip">Somos una familia de carpinteros situados en Santa Fe Capital contando con mas de 50 años de experiencia en el rubro</p>
+                <h3 id="Scroll1" class="titulo1" data-aos="fade" data-aos-duration="1200" data-aos-delay="0">¿Quiénes somos?</h3>
+                    <p class="parrafoDescrip" data-aos="fade" data-aos-duration="1200" data-aos-delay="300">Somos una familia de carpinteros situados en Santa Fe Capital contando con mas de 50 años de experiencia en el rubro</p>
             </article>
-            <div id="contenedor">
+            <div id="contenedor" data-aos="fade" data-aos-duration="1200" data-aos-delay="500">
                 <div class="contenedor__iconos">
                     <img src="./multimedia/imagen/amantes-carpinteria.png" alt="Amantes">
                         <div class="contenedor__desc">Amantes de la carpintería</div>
@@ -87,14 +87,14 @@
             </div>  
         </section> <!--QUIENES SOMOS CIERRA--> 
 
-        <section class="pre"> <!--PRESENTACION PRODUCTO--> 
-            <div class="pre__imagen">
+        <section class="pre" data-aos="fade" data-aos-duration="1200" data-aos-delay="0"> <!--PRESENTACION PRODUCTO--> 
+            <div class="pre__imagen" data-aos="fade-up" data-aos-duration="1200">
                 <img src="./multimedia/imagen/mesita.png" alt="mesita">
             </div>
             <div class="pre__texto">
                 <h2>Muebles 100% originales</h2>
                 <h5>Te ayudamos a crear el perfecto balance entre diseño y calidad, aquellas cualidades que más caracterizan a nuestros productos.</h5>
-                <div class="pre__lista">
+                <div class="pre__lista" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
                     <div class="pre__item">
                         <i class="material-icons" style="font-size:40px;color:white;">navigate_next</i>
                         <p>Hechos a la medida que necesites</p>
@@ -187,6 +187,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
+        offset: 120,
+	    delay: 500,
+	    duration: 400,
+	    easing: 'ease'
       });
     </script>
 </body>

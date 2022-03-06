@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body class="body body--nosotros">
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
+            <div class="container-fluid" data-aos="fade" data-aos-duration="1200">
                 <img src="../multimedia/imagen/logo-01.png" alt="logo" class="navbar-brand">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,16 +45,19 @@
         </nav>
     </header>
 
-<main>
-    <section class="historia" >
-            <div class="historia__caja">
-                <h1 class="historia__titulo">Nuestra Historia</h1>
-                <div class="historia__sub">
-                    <p class="historia__texto">La empresa tiene su origen en el año 1943 en San Cristóbal, en el centro de la provincia de Santa Fe, fundada por la sociedad Pivetta-Andreossi. En sus comienzos se dedicaron a la producción de sillas y escobas y con el tiempo comenzaron a agregar diversos muebles.
-                    En su auge, llegó a contar con 60 empleados y a través de los trenes, comencializaban sus productos a Buenos Aires y al norte del país. En el año 1959, se ven obligados a cerrar sus puertas debido a problemas económicos nacionales. </p>
-                    <p class="historia__texto">A pesar de ello, Pivetta continúa trabajando autónomamente y le enseña el oficio a su nieto Daniel Ernst, el cual en el año 1987, decide mudar y reabrir la fábrica al norte de la ciudad de Santa Fe. <span class="resalta">Actualmente está dirigida por él y su hijo Gustavo, quienes continúan compartiendo esta tradición que se mantiene intacta hace 79 años, siendo la esencia de esta familia que hoy llamamos Capintería Blackwood, su sello e identidad.</span></p>
-                </div>
+<main> 
+    <section class="historia">
+        <div class="historia__caja">
+            <h1 class="historia__titulo" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="0">Nuestra Historia</h1>
+            <div class="historia__sub" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">
+                <p class="historia__texto">La empresa tiene su origen en el año 1943 en San Cristóbal, en el centro de la provincia de Santa Fe, fundada por la sociedad Pivetta-Andreossi. En sus comienzos se dedicaron a la producción de sillas y escobas y con el tiempo comenzaron a agregar diversos muebles.
+                En su auge, llegó a contar con 60 empleados y a través de los trenes, comencializaban sus productos a Buenos Aires y al norte del país. En el año 1959, se ven obligados a cerrar sus puertas debido a problemas económicos nacionales. </p>
+                <p class="historia__texto">A pesar de ello, Pivetta continúa trabajando autónomamente y le enseña el oficio a su nieto Daniel Ernst, el cual en el año 1987, decide mudar y reabrir la fábrica al norte de la ciudad de Santa Fe. <span class="resalta">Actualmente está dirigida por él y su hijo Gustavo, quienes continúan compartiendo esta tradición que se mantiene intacta hace 79 años, siendo la esencia de esta familia que hoy llamamos Capintería Blackwood, su sello e identidad.</span></p>
             </div>
+        </div>
+        <video class="videobg" autoplay muted loop>
+            <source src="../multimedia/video/nosotros.mp4" type="video/mp4">
+        </video>
     </section>
 </main>
 
@@ -96,5 +100,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120,
+    delay: 500,
+    duration: 400,
+    easing: 'ease'
+  });
+</script>
 </body>
 </html>
