@@ -64,12 +64,12 @@
             font-size: 14px;
 
             @include tablet{
-                font-size: 15px;
+                font-size: 16px;
             }
 
             @include movil{
                 width: 70%;
-                font-size: 11px;
+                font-size: 13px;
             }
         }
     
@@ -121,7 +121,7 @@
             margin-top: 10px;
 
             @include tablet{
-                font-size: 15px;
+                font-size: 17px;
                 margin-top: 22px;
             }
 
@@ -143,7 +143,7 @@
         width: 22%;
 
         @include tablet{
-            width: 56%;
+            width: 75%;
             padding-top: 40px;
         }
 
@@ -161,7 +161,7 @@
             font-family: 'Nunito', sans-serif;
 
             @include tablet{
-                font-size: 16px;
+                font-size: 17px;
             }
         }
 
@@ -172,6 +172,10 @@
             font-weight: 600;
             margin-bottom: 20px;
             font-family: 'Poppins', sans-serif;
+
+            @include tablet{
+            font-size: 17px;
+            }
         }
 
     }
