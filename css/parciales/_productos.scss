@@ -16,14 +16,16 @@
 
     @include tablet{
         width: 80%;
-        height: 950px;
+        height: 90vh;
         flex-direction: column-reverse;
         margin-top: 100px;
     }
 
     @include movil{
         flex-direction: column-reverse;
-        margin-top: 40px;
+        margin-top: 80px;
+        height: 90vh;
+
         
     }
 
@@ -42,7 +44,7 @@
         }
 
         @include movil{
-            width: 90%;
+            width: 100%;
             height: 54%;
             margin-top: 20px;
             text-align: center;
@@ -58,9 +60,9 @@
             color: white;
 
             @include movil{
-                width: 100%;
-                font-size: 25px;
-                letter-spacing: 15px;
+                width: 90%;
+                font-size: 35px;
+                letter-spacing: 10px;
                 text-align: left;
             }
         }
@@ -75,8 +77,11 @@
 
             @include movil{
                 width: 100%;
-                font-size: 15px;
+                padding-top: 5%;
+                font-size: 18px;
                 text-align: left;
+                letter-spacing: 0px;
+
             }
         }
 
@@ -111,7 +116,11 @@
     align-items: center;
     padding-left: 50px;
 
-    
+    @include tablet{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+    }  
     @include movil{
         flex-direction: column;
         justify-content: center;
@@ -122,6 +131,12 @@
 .texto-cont{
     padding: 50px;
     width: 43%;
+
+    @include tablet{
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
 
     @include movil{
         padding: 30px;
@@ -134,6 +149,11 @@
         font-size: 2.2em;
         font-weight: 500;
         padding: 30px 0;
+
+        @include movil{
+            font-size: 1.8em;
+            padding: 10px 0;
+        }
     }
 
     p{
@@ -144,6 +164,14 @@
 
         @include movil{
             width: 100%;
+            font-size: 1em;
+        }
+
+        @include tablet{
+            margin: auto;
+            width: 90%;
+            font-size: 1.4em;
+            margin-bottom: 30px;
         }
     }
 }
@@ -157,6 +185,8 @@
 
     @include movil{
         flex-direction: column;
+        height: 140vh;
+
     }
 
 }
@@ -213,7 +243,7 @@
 /*-------------------------------------------------------------------------------------TIENDA*/
 
    .side-bar{
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(41, 41, 41, 0.5);
     backdrop-filter: blur(15px);
     width: 290px;
     height: 100vh;
@@ -224,6 +254,10 @@
     transition: 0.6s ease;
     transition-property: left;
     z-index: 1000;
+
+    @include movil{
+        width: 240px;
+    }
    }
    
    .side-bar.active{
@@ -231,8 +265,13 @@
    }
    
    .side-bar .menu{
-    width: 100%;
-    margin-top: 80px;
+    width: 80%;
+    margin: 80px 0 80px 45px;
+
+    @include movil{
+        width: 90%;
+        margin: 80px 0 80px 15px;
+    }
    }
    
    .side-bar .menu .item{
@@ -245,12 +284,13 @@
     font-size: 16px;
     text-decoration: none;
     display: block;
-    padding: 5px 30px;
+    padding: 5px 10px;
     line-height: 60px;
    }
    
    .side-bar .menu .item a:hover{
-    background: #8621F8;
+    background: rgba(27, 27, 27, 0.603);
+    border-radius: 10px;
     transition: 0.3s ease;
    }
    
@@ -271,7 +311,7 @@
    }
    
    .side-bar .menu .item .sub-menu a{
-    padding-left: 80px;
+    padding-left: 40px;
    }
    
    .rotate{
@@ -289,7 +329,7 @@
    
    .menu-btn{
     position: absolute;
-    color: #fff;
+    color: $celeste;
     font-size: 20px;
     margin: 0;
     cursor: pointer;
@@ -314,14 +354,11 @@
     text-align: center;
     line-height: 80px;
    }
+
    
-   @media (max-width: 900px){
-    .main h1{
-      font-size: 40px;
-      line-height: 60px;
-    }
+   h4{
+       color: $celeste;
    }
-   
 
 .gallery{
     margin: 80px 0;
@@ -329,17 +366,39 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     align-items: top;
     color: $blanco;
     font-family: 'Poppins', 'sans-serif';
     width: 100%;
     min-height: 100vh;
+
+    @include tablet{
+        margin: 20px 0 0;
+        padding: 80px 0 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    @include movil{
+        margin: 20px 0 0;
+        padding: 80px 0 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 .wrapper{
     width: 80%;
     margin: auto;
-    text-align: center;
+
+    @include tablet{
+        width: 100%;
+    }
+
+    @include movil{
+        width: 95%;
+    }
 }
 
 .header-tienda{
@@ -347,7 +406,17 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
+
+    @include movil{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    @include tablet{
+        width: 90%;
+    }
 }
 
 .section-header{
@@ -355,6 +424,16 @@
     padding-bottom: 30px;
     color: white;
     letter-spacing: 1px;
+
+    @include movil{
+        margin: 50px 0 0;
+        font-size: 40px;
+    }
+
+    @include tablet{
+        padding-left: 100px;
+        font-size: 35px;
+    }
 }
 
 .content{
@@ -386,6 +465,16 @@
     height: 650px;
     width: 400px;
     overflow: hidden;
+
+    @include movil{
+        width: 100vw;
+        height: 60vh;
+    }
+
+    @include tablet{
+        width: 40vw;
+        height: 60vh;
+    }
 }
 
 .main-content .box::before{

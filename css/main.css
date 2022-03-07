@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .fondo {
-    height: 900px;
+    height: 120vh;
   }
 }
 
@@ -41,6 +41,7 @@
     font-size: 25px;
     letter-spacing: 10px;
     padding-bottom: 25px;
+    padding-top: 20px;
   }
 }
 
@@ -75,14 +76,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .legend {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .legend {
     margin-bottom: 40px;
-    width: 98%;
+    width: 95%;
     font-size: 15px;
     letter-spacing: 3px;
   }
@@ -111,7 +112,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .relleno {
     width: 90%;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -138,7 +139,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .textarea {
     width: 90%;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 10px;
   }
 }
@@ -166,7 +167,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #notificacion {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -194,8 +195,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .botonform {
-    width: 50%;
-    font-size: 18px;
+    width: 40%;
+    font-size: 15px;
   }
 }
 
@@ -1303,7 +1304,7 @@
   .historia__caja .historia__sub .historia__texto {
     margin-top: 30px;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 22px;
   }
 }
@@ -1344,7 +1345,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contenedor {
     width: 80%;
-    height: 950px;
+    height: 90vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1359,7 +1360,8 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-top: 40px;
+    margin-top: 80px;
+    height: 90vh;
   }
 }
 
@@ -1380,7 +1382,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor .contenedor__texto {
-    width: 90%;
+    width: 100%;
     height: 54%;
     margin-top: 20px;
     text-align: center;
@@ -1399,9 +1401,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor .contenedor__texto .contenedor__titulo {
-    width: 100%;
-    font-size: 25px;
-    letter-spacing: 15px;
+    width: 90%;
+    font-size: 35px;
+    letter-spacing: 10px;
     text-align: left;
   }
 }
@@ -1418,8 +1420,10 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor .contenedor__texto .contenedor__desc {
     width: 100%;
-    font-size: 15px;
+    padding-top: 5%;
+    font-size: 18px;
     text-align: left;
+    letter-spacing: 0px;
   }
 }
 
@@ -1459,6 +1463,19 @@
   padding-left: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .slider {
     -webkit-box-orient: vertical;
@@ -1477,6 +1494,14 @@
   width: 43%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .texto-cont {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .texto-cont {
     padding: 30px;
@@ -1492,6 +1517,13 @@
   padding: 30px 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .texto-cont h4 {
+    font-size: 1.8em;
+    padding: 10px 0;
+  }
+}
+
 .texto-cont p {
   color: white;
   font-family: 'Poppins';
@@ -1502,6 +1534,16 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .texto-cont p {
     width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .texto-cont p {
+    margin: auto;
+    width: 90%;
+    font-size: 1.4em;
+    margin-bottom: 30px;
   }
 }
 
@@ -1524,6 +1566,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 140vh;
   }
 }
 
@@ -1586,7 +1629,7 @@
 /*-------------------------------------------------------------------------------------SLIDER CIERRA*/
 /*-------------------------------------------------------------------------------------TIENDA*/
 .side-bar {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(41, 41, 41, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   width: 290px;
@@ -1602,13 +1645,26 @@
   z-index: 1000;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .side-bar {
+    width: 240px;
+  }
+}
+
 .side-bar.active {
   left: 0;
 }
 
 .side-bar .menu {
-  width: 100%;
-  margin-top: 80px;
+  width: 80%;
+  margin: 80px 0 80px 45px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .side-bar .menu {
+    width: 90%;
+    margin: 80px 0 80px 15px;
+  }
 }
 
 .side-bar .menu .item {
@@ -1621,12 +1677,13 @@
   font-size: 16px;
   text-decoration: none;
   display: block;
-  padding: 5px 30px;
+  padding: 5px 10px;
   line-height: 60px;
 }
 
 .side-bar .menu .item a:hover {
-  background: #8621F8;
+  background: rgba(27, 27, 27, 0.603);
+  border-radius: 10px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -1649,7 +1706,7 @@
 }
 
 .side-bar .menu .item .sub-menu a {
-  padding-left: 80px;
+  padding-left: 40px;
 }
 
 .rotate {
@@ -1668,7 +1725,7 @@
 
 .menu-btn {
   position: absolute;
-  color: #fff;
+  color: #61e9be;
   font-size: 20px;
   margin: 0;
   cursor: pointer;
@@ -1699,11 +1756,8 @@
   line-height: 80px;
 }
 
-@media (max-width: 900px) {
-  .main h1 {
-    font-size: 40px;
-    line-height: 60px;
-  }
+h4 {
+  color: #61e9be;
 }
 
 .gallery {
@@ -1719,6 +1773,8 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
@@ -1728,10 +1784,47 @@
   min-height: 100vh;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    margin: 20px 0 0;
+    padding: 80px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .gallery {
+    margin: 20px 0 0;
+    padding: 80px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .wrapper {
   width: 80%;
   margin: auto;
-  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+  }
 }
 
 .header-tienda {
@@ -1744,9 +1837,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-tienda {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-tienda {
+    width: 90%;
+  }
 }
 
 .section-header {
@@ -1754,6 +1863,20 @@
   padding-bottom: 30px;
   color: white;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section-header {
+    margin: 50px 0 0;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-header {
+    padding-left: 100px;
+    font-size: 35px;
+  }
 }
 
 .content {
@@ -1794,6 +1917,20 @@
   height: 650px;
   width: 400px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-content .box {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-content .box {
+    width: 40vw;
+    height: 60vh;
+  }
 }
 
 .main-content .box::before {

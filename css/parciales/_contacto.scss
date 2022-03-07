@@ -13,7 +13,7 @@
     }
 
     @include movil{
-        height: 900px;
+        height: 120vh;
     }
 
 }
@@ -36,6 +36,7 @@
         font-size: 25px;
         letter-spacing: 10px;
         padding-bottom: 25px;
+        padding-top: 20px;
     }
 
 }
@@ -67,13 +68,13 @@
     text-transform: uppercase;
 
     @include tablet{
-        width: 50%;
+        width: 100%;
     }
 
     
     @include movil{
         margin-bottom: 40px;
-        width: 98%;
+        width: 95%;
         font-size: 15px;
         letter-spacing: 3px;
 
@@ -100,7 +101,7 @@
 
     @include movil{
         width: 90%;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -124,7 +125,7 @@
     
     @include movil{
         width: 90%;
-        font-size: 18px;
+        font-size: 16px;
         border-radius: 10px;
     }
 }
@@ -148,7 +149,7 @@
     }
 
     @include movil{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
@@ -172,8 +173,8 @@
     }
 
     @include movil{
-        width: 50%;
-        font-size: 18px;
+        width: 40%;
+        font-size: 15px;
     }
 }
 
