@@ -1262,7 +1262,7 @@
 }
 
 .historia__caja .historia__sub .historia__texto .resalta {
-  color: #75ccb1;
+  color: #33ffbe;
   font-weight: 600;
 }
 
@@ -1275,10 +1275,10 @@
 
 /*PRODUCTOS*/
 .contenedor {
-  height: 850px;
-  width: 80%;
+  height: 100vh;
+  width: 80vw;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1308,8 +1308,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contenedor {
-    width: 90%;
-    height: 550px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1319,7 +1317,7 @@
 }
 
 .contenedor .contenedor__texto {
-  width: 35%;
+  width: 40%;
   height: 54%;
 }
 
@@ -1362,7 +1360,7 @@
 }
 
 .contenedor .contenedor__texto .contenedor__desc {
-  width: 77%;
+  width: 82%;
   font-size: 22px;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -1396,16 +1394,90 @@
   }
 }
 
+/*-------------------------------------------------------------------------------------SLIDER*/
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.texto-cont {
+  padding: 50px;
+  width: 40%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .texto-cont {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.texto-cont h4 {
+  color: #33ffbe;
+  font-size: 2.2em;
+  font-weight: 500;
+  padding: 30px 0;
+}
+
+.texto-cont p {
+  color: white;
+  font-family: 'Poppins';
+  font-size: 1.2em;
+  width: 80%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .texto-cont p {
+    width: 100%;
+  }
+}
+
 #conteiner {
   height: 80vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .slide {
@@ -1452,7 +1524,7 @@
 }
 
 .slide:nth-child(6) {
-  background: url(../multimedia/imagen/f.jpg);
+  background: url(../multimedia/imagen/a.jpg);
   background-position: center center;
 }
 
@@ -1464,6 +1536,8 @@
           filter: invert(0);
 }
 
+/*-------------------------------------------------------------------------------------SLIDER CIERRA*/
+/*-------------------------------------------------------------------------------------TIENDA*/
 .side-bar {
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(15px);
@@ -1549,7 +1623,7 @@
   position: absolute;
   color: #fff;
   font-size: 20px;
-  margin-left: 100px;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -1607,17 +1681,15 @@
   min-height: 100vh;
 }
 
-.aside {
-  width: 15%;
-}
-
 .wrapper {
-  width: 75%;
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 
 .header-tienda {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1625,13 +1697,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-header {
-  width: 80%;
+  margin: auto;
   padding-bottom: 30px;
   color: white;
   letter-spacing: 1px;
@@ -1727,6 +1799,7 @@
   right: 0;
 }
 
+/*-------------------------------------------------------------------------------------TIENDA CIERRA*/
 /*MATERIALES*/
 .material {
   background-color: #161512;
