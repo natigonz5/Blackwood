@@ -1,7 +1,7 @@
 @import "./variables";
 
 
-/* HOME */ 
+/* HOME------------------------------------------------------ */ 
     
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -12,10 +12,6 @@
     z-index: 0;
     height: $alto;
 
-    @include movil{
-
-    }
-
     &__caja{
         margin: auto;
         text-align: center;
@@ -25,7 +21,7 @@
         justify-content: center;
         backdrop-filter: blur(15px);
         width: ($ancho/2)-200;
-        background-color: #18181867;
+        background-color: #18181896;
         height: $alto+61;
         animation: fadeIn 2s;
 
@@ -39,81 +35,78 @@
             width: 100%;
             height: 120vh;
         }
-
-        .intro__logo{
-            width: 20vw;
-            margin: 0px auto 10px;
-
-            @include tablet{
-                width: 60vw;
-            }
-
-            @include movil{
-                width: 70vw;
-            }
-        }
-
-        .intro__descripcion{
-            color: rgb(202, 202, 202);
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: 5px;
-            font-size: 0.8em;
-
-            @include tablet{
-                font-size: 1.1em;
-            }
-        }
-
-        .intro__texto{
-            padding: 40px 0;
-            border-radius: 10px;
-
-            .intro__titulo{
-                color: $celeste;
-                font-size: 1.4em;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                letter-spacing: 8px;
-                text-transform: uppercase;
-
-                @include tablet{
-                    font-size: 1.6em;
-                }
-
-                @include movil{
-                    letter-spacing: 6px;
-
-                }
-            }
-        
-            .intro__subTitulo{
-                text-align: center;
-                color: $blanco;
-                font-size: 1.2em;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                line-height: 24px;
-                width: 60%;
-                margin: 30px auto 0;
-
-                @include tablet{
-                    font-size: 1.4em;
-                    line-height: 30px;
-                    width: 75%;
-                }
-    
-                @include movil{
-                    width: 95%;
-                    font-size: 1.05em;
-                    margin: 30px 10px;
-
-                }
-    
-            }  
-        }
-    
-     
     }
+
+    &__logo{
+        width: 20vw;
+        margin: 0px auto 10px;
+
+        @include tablet{
+            width: 60vw;
+        }
+
+        @include movil{
+            width: 70vw;
+        }
+    }
+
+    &__descripcion{
+        color: rgb(202, 202, 202);
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 5px;
+        font-size: 0.9em;
+
+        @include tablet{
+            font-size: 1.1em;
+        }
+    }
+
+    &__texto{
+        padding: 40px 0;
+        border-radius: 10px;
+    }
+
+    &__titulo{
+        color: $celeste;
+        font-size: 1.4em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+
+        @include tablet{
+            font-size: 1.6em;
+        }
+
+        @include movil{
+            letter-spacing: 6px;
+
+        }
+    }
+        
+    &__subTitulo{
+        text-align: center;
+        color: $blanco;
+        font-size: 1.2em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        line-height: 24px;
+        width: 60%;
+        margin: 30px auto 0;
+
+        @include tablet{
+            font-size: 1.4em;
+            line-height: 30px;
+            width: 75%;
+        }
+    
+        @include movil{
+            width: 95%;
+            font-size: 1.05em;
+            margin: 30px 10px;
+        }
+    
+    }  
 }
 
 .button{
@@ -125,88 +118,90 @@
 .button:hover{
     transform: scale(1.2);
 }
+/* HOME------------------------------------------------------ CIERRA*/ 
 
+/*quienes somos----------------------------------------------------*/
+.empresa{
 
-/*INDEX quienes somos*/
-.titulo1{
-    margin-top: 100px;
-    padding-top: 50px;
-    color: white;
-    font-size: 1.6em;
-    line-height: 70px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 12px;
-
-    @include movil{
-        letter-spacing: 8px;
-        line-height: 40px;
-        font-size: 1.2em;
-        padding-top: 10px;
-
-    }
-}
-
-.parrafoDescrip{
-    color: white;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    line-height: 30px;
-    font-size: 1.3em;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
-    
-    @include tablet{
-        padding-top: 20px;
-        font-weight: 100;
-        width: 90%;
-    }
-
-    @include movil{
-        letter-spacing: 0;
-        font-size: 1.05em;
-        line-height: 20px;
-        width: 90%;
-    }
-}
-
-#contenedor{
-    width: ($ancho/2)+192;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-
-    @include tablet{
-        margin-top: 70px;
-        flex-wrap: wrap;
-        width: 90%;
-    }
-
-    @include movil{
-        margin-top: 15px;
-        flex-wrap: wrap;
-        width: 50%;
-    }
-
-    .contenedor__iconos {
+    &__titulo{
+        margin-top: 100px;
+        padding-top: 50px;
+        color: white;
+        font-size: 1.6em;
+        line-height: 70px;
         text-align: center;
-    
-    @include tablet{ 
-        padding: 8px;
-    } 
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 12px;
 
-    @include movil{ 
-        padding: 4px;
-    } 
+        @include movil{
+            letter-spacing: 8px;
+            line-height: 40px;
+            font-size: 1.2em;
+            padding-top: 10px;
 
+        }
+    }
+
+    &__parrafo{
+        color: white;
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1.3em;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        
+        @include tablet{
+            padding-top: 20px;
+            font-weight: 100;
+            width: 90%;
+        }
+
+        @include movil{
+            letter-spacing: 0;
+            font-size: 1.05em;
+            line-height: 20px;
+            width: 90%;
+        }
+    }
+
+    &__contenedor{
+        width: ($ancho/2)+192;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+        @include tablet{
+            margin-top: 70px;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+
+        @include movil{
+            margin-top: 15px;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+    }
+
+    &__iconos {
+        text-align: center;
+        
+        @include tablet{ 
+            padding: 8px;
+        } 
+
+        @include movil{ 
+            padding: 4px;
+        }
 
         img{
             transform: scale(1.1);
@@ -216,28 +211,30 @@
                 transform: scale(0.8);
             } 
         }
+    } 
 
-        .contenedor__desc {
-            padding-top: 20px;
-            color:$blanco;
-            font-size: 16px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
+    &__desc {
+        padding-top: 20px;
+        color:$blanco;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
 
-            @include tablet{
-                font-size: 20px;
-                padding-top: 40px;
-            }
-
-            @include movil{
-                font-size: 16px;
-                padding-top: 20px;        
-            }
+        @include tablet{
+            font-size: 20px;
+            padding-top: 40px;
         }
 
+        @include movil{
+            font-size: 16px;
+            padding-top: 20px;        
+        }
     }
- 
 }
+
+/*quienes somos----------------------------------------------------CIERRA*/
+
+/*PROMO---------------------------------------------------------*/
 
 .pre{
     width: 70%;
@@ -325,6 +322,7 @@
             font-weight:400;
             width: 450px;
             font-size: 18px;
+            line-height: 28px;
 
             @include tablet{
                 font-size: 24px;
@@ -338,47 +336,49 @@
                 text-align: center;
             }
         }
-
-        .pre__lista{
-            margin-top: 40px;
-
-            @include tablet{
-                width: 500px;
-            }
-
-            @include movil{
-                width: 90%;
-            }
-
-            .pre__item{
-                display: flex;
-                flex-direction: row;
-
-            i{
-                margin-right: 20px;
-                margin-top: 2px;
-                }
-
-            }
-
-            p{
-                margin-top: 10px;
-                font-weight: 300;
-                font-size: 16px;
-
-                @include tablet{
-                    font-size: 21px;
-                }
-            }
-
-        }
     }
 
+    &__lista{
+        margin-top: 40px;
+
+        @include tablet{
+            width: 500px;
+        }
+
+        @include movil{
+            width: 90%;
+        }
+
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: row;
+
+        i{
+            margin-right: 20px;
+            margin-top: 2px;
+        }
+
+        p{
+            margin-top: 10px;
+            font-weight: 300;
+            font-size: 16px;
+
+            @include tablet{
+                font-size: 21px;
+            }
+        }
+    }
 }
 
-/*INDEX grid*/
 
-    .gridContainer {
+/*PROMO----------------------------------------------------CIERRA*/
+
+/*GRID---------------------------------------------------------*/
+
+.grid{
+    &__container {
         display: grid;
         grid-gap: 20px;
         padding: 10px;
@@ -406,7 +406,7 @@
             }
     
     
-        .gridItem img, video{
+        .grid__item img, video{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -454,6 +454,10 @@
             }
         }          
     }  
+}
+/*GRID-----------------------------------------------------CIERRA*/
+
+/*SUSCRIPCION---------------------------------------------------------*/
 
 
 .suscribir{
@@ -463,7 +467,7 @@
         margin-top: 50px;
     }
 
-    .suscribir__cont{
+    &__cont{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -491,60 +495,58 @@
             justify-content: center;
 
         }
+    }
     
+    &__izq{
+        margin-top: 17px;
+        width: 64%;
+        color:$blanco;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        margin-right: 100px;
+
+        @include tablet{
+            width: 45%;
+            margin-right: 50px;
+        }
+
+        @include movil{
+            width: 95%;
+            margin-right: 0px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 15px;
+            margin-top: 0px;
+        }
+    }
     
-        .suscribir__izq{
-            margin-top: 17px;
-            width: 64%;
-            color:$blanco;
-            font-size: 18px;
-            font-family: 'Poppins', sans-serif;
-            margin-right: 100px;
+    &__der{
+        width: 22%;
+        border-radius: 25px;
+        padding: 10px;
+        text-align: center;
+        border-color:#76CCB1;
+        border-style: solid;
+        border-width: 1px;
 
-            @include tablet{
-                width: 45%;
-                margin-right: 50px;
-            }
-
-            @include movil{
-                width: 95%;
-                margin-right: 0px;
-                text-align: center;
-                font-size: 15px;
-                padding-bottom: 15px;
-                margin-top: 0px;
-
-            }
+        @include movil{
+            width: 80%;
+            margin-right: 0px;
         }
     
-        .suscribir__der{
-            width: 22%;
-            border-radius: 25px;
-            padding: 10px;
+        a{
             text-align: center;
-            border-color:#76CCB1;
-            border-style: solid;
-            border-width: 1px;
+            color: $blanco;
+            font-size: 19px;
+            font-weight: 00;
+            font-family: 'Poppins', sans-serif;
 
             @include movil{
-                width: 80%;
-                margin-right: 0px;
+                font-size: 16px;
             }
-    
-    
-    
-            a{
-                text-align: center;
-                color: $blanco;
-                font-size: 19px;
-                font-weight: 00;
-                font-family: 'Poppins', sans-serif;
-
-                @include movil{
-                    font-size: 16px;
-                }
-            }   
-        }    
-    }    
+        }   
+    }        
 }
+
+/*SUSCRIPCION--------------------------------------------------------- CIERRA*/
 

@@ -24,14 +24,10 @@
     @include movil{
         flex-direction: column-reverse;
         margin-top: 80px;
-        height: 90vh;
-
-        
+        height: 90vh;     
     }
 
-
-
-    .contenedor__texto{
+    &__texto{
         width: 40%;
         height: 54%;
 
@@ -50,45 +46,42 @@
             text-align: center;
             margin-left: 0px;
         }
-        
-        .contenedor__titulo{
-            width: 83%;
-            font-size: 60px;
-            font-weight: 500;
-            letter-spacing: 25px;
-            font-family: 'Poppins', 'sans-serif';
-            color: white;
-
-            @include movil{
-                width: 90%;
-                font-size: 35px;
-                letter-spacing: 10px;
-                text-align: left;
-            }
-        }
-        
-        .contenedor__desc{
-            width: 82%;
-            font-size: 22px;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            padding-top: 2%;
-            letter-spacing: 1px;
-
-            @include movil{
-                width: 100%;
-                padding-top: 5%;
-                font-size: 18px;
-                text-align: left;
-                letter-spacing: 0px;
-
-            }
-        }
-
-
     }
 
-    .contenedor__silla{
+    &__titulo{
+        width: 83%;
+        font-size: 60px;
+        font-weight: 500;
+        letter-spacing: 25px;
+        font-family: 'Poppins', 'sans-serif';
+        color: white;
+
+        @include movil{
+            width: 90%;
+            font-size: 35px;
+            letter-spacing: 10px;
+            text-align: left;
+        }
+    }
+        
+    &__desc{
+        width: 82%;
+        font-size: 22px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 2%;
+        letter-spacing: 1px;
+
+        @include movil{
+            width: 100%;
+            padding-top: 5%;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 0px;
+        }
+    }
+
+    &__silla{
         img{
             margin-left: 0;
             
@@ -100,11 +93,9 @@
             @include movil{
                 margin-left: 0px;
                 width: 100%;
-                }
+            }
         }
     }
-
-
 }
 
 /*-------------------------------------------------------------------------------------SLIDER*/
@@ -126,242 +117,124 @@
         justify-content: center;
         padding-left: 0;
     }
-}
 
-.texto-cont{
-    padding: 50px;
-    width: 43%;
-
-    @include tablet{
-        padding: 30px;
-        width: 100%;
-        text-align: center;
-    }
-
-    @include movil{
-        padding: 30px;
-        width: 100%;
-        text-align: center;
-    }
-
-    h4{
-        color: $celeste;
-        font-size: 2.2em;
-        font-weight: 500;
-        padding: 30px 0;
-
-        @include movil{
-            font-size: 1.8em;
-            padding: 10px 0;
-        }
-    }
-
-    p{
-        color: $blanco;
-        font-family: 'Poppins';
-        font-size: 1.2em;
-        width: 80%;
-
-        @include movil{
-            width: 100%;
-            font-size: 1em;
-        }
+    &__texto{
+        padding: 50px;
+        width: 43%;
 
         @include tablet{
-            margin: auto;
-            width: 90%;
-            font-size: 1.4em;
-            margin-bottom: 30px;
+            padding: 30px;
+            width: 100%;
+            text-align: center;
+        }
+
+        @include movil{
+            padding: 30px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h4{
+            color: $celeste;
+            font-size: 2.2em;
+            font-weight: 500;
+            padding: 30px 0;
+
+            @include movil{
+                font-size: 1.8em;
+                padding: 10px 0;
+            }
+        }
+
+        p{
+            color: $blanco;
+            font-family: 'Poppins';
+            font-size: 1.2em;
+            width: 80%;
+
+            @include movil{
+                width: 100%;
+                font-size: 1em;
+            }
+
+            @include tablet{
+                margin: auto;
+                width: 90%;
+                font-size: 1.4em;
+                margin-bottom: 30px;
+            }
         }
     }
-}
 
-#conteiner{
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-
-    @include movil{
-        flex-direction: column;
-        height: 140vh;
-
+    &__conteiner{
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+    
+        @include movil{
+            flex-direction: column;
+            height: 140vh;
+        }
     }
 
-}
-
-.slide{
-    height: 80vh;
-    width: 100%;
-    overflow: hidden;
-    flex: 1;
-    filter: invert(8%);
-    filter: saturate(0);
-    box-shadow: 0 0 20px 10px hsla(0, 0%, 0%, .5);
-    border-right: 1px solid rgb(255, 255, 255);
-    transition: 0.7s ease-in-out;
-}
-
-.slide:nth-child(1){
-    background:  url(../multimedia/imagen/a.jpg);
-    background-position: center center;
-}
-
-.slide:nth-child(2){
-    background:  url(../multimedia/imagen/b.jpg);
-    background-position: center center;
-}
-
-.slide:nth-child(3){
-    background:  url(../multimedia/imagen/c.jpg);
-    background-position: center center;
-}
-
-.slide:nth-child(4){
-    background:  url(../multimedia/imagen/d.jpg);
-    background-position: center center;
-}
-
-.slide:nth-child(5){
-    background:  url(../multimedia/imagen/e.jpg);
-    background-position: center center;
-}
-
-.slide:nth-child(6){
-    background:  url(../multimedia/imagen/f.jpg);
-    background-position: center center;
-}
-
-.slide:hover{
-    flex-grow: 3;
-    filter: invert(0);
+    &__slide{
+        height: 80vh;
+        width: 100%;
+        overflow: hidden;
+        flex: 1;
+        filter: invert(8%);
+        filter: saturate(0);
+        box-shadow: 0 0 20px 10px hsla(0, 0%, 0%, .5);
+        border-right: 1px solid rgb(255, 255, 255);
+        transition: 0.7s ease-in-out;
+    }
+    
+    &__slide:nth-child(1){
+        background:  url(../multimedia/imagen/a.jpg);
+        background-position: center center;
+    }
+    
+    &__slide:nth-child(2){
+        background:  url(../multimedia/imagen/b.jpg);
+        background-position: center center;
+    }
+    
+    &__slide:nth-child(3){
+        background:  url(../multimedia/imagen/c.jpg);
+        background-position: center center;
+    }
+    
+    &__slide:nth-child(4){
+        background:  url(../multimedia/imagen/d.jpg);
+        background-position: center center;
+    }
+    
+    &__slide:nth-child(5){
+        background:  url(../multimedia/imagen/e.jpg);
+        background-position: center center;
+    }
+    
+    &__slide:nth-child(6){
+        background:  url(../multimedia/imagen/f.jpg);
+        background-position: center center;
+    }
+    
+    &__slide:hover{
+        flex-grow: 3;
+        filter: invert(0);
+    }
 }
 
 /*-------------------------------------------------------------------------------------SLIDER CIERRA*/
 
+
+
 /*-------------------------------------------------------------------------------------TIENDA*/
 
-   .side-bar{
-    background-color: rgba(41, 41, 41, 0.5);
+.tienda{  /*ENGLOBA TODO: HEADER + SIDE BAR + GRID*/
 
-    backdrop-filter: blur(15px);
-    width: 290px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    overflow-y: auto;
-    transition: 0.6s ease;
-    transition-property: left;
-    z-index: 1000;
-
-    @include movil{
-        width: 240px;
-    }
-   }
-   
-   .side-bar.active{
-    left: 0;
-   }
-   
-   .side-bar .menu{
-    width: 80%;
-    margin: 80px 0 80px 45px;
-
-    @include movil{
-        width: 90%;
-        margin: 80px 0 80px 15px;
-    }
-   }
-   
-   .side-bar .menu .item{
-    position: relative;
-    cursor: pointer;
-   }
-   
-   .side-bar .menu .item a{
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-    padding: 5px 10px;
-    line-height: 60px;
-   }
-   
-   .side-bar .menu .item a:hover{
-    background: rgba(27, 27, 27, 0.603);
-    border-radius: 10px;
-    transition: 0.3s ease;
-   }
-   
-   .side-bar .menu .item i{
-    margin-right: 15px;
-   }
-   
-   .side-bar .menu .item a .dropdown{
-    position: absolute;
-    right: 0;
-    margin: 20px;
-    transition: 0.3s ease;
-   }
-   
-   .side-bar .menu .item .sub-menu{
-    background: rgba(255, 255, 255, 0.1);
-    display: none;
-   }
-   
-   .side-bar .menu .item .sub-menu a{
-    padding-left: 40px;
-   }
-   
-   .rotate{
-    transform: rotate(90deg);
-   }
-   
-   .close-btn{
-    position: absolute;
-    color: #fff;
-    font-size: 20px;
-    right: 0;
-    margin: 25px;
-    cursor: pointer;
-   }
-   
-   .menu-btn{
-    position: absolute;
-    color: $celeste;
-    font-size: 20px;
-    margin: 0;
-    cursor: pointer;
-
-    i{
-        margin-right: 20px;
-
-    }
-   }
-   
-   .main{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-   }
-   
-   .main h1{
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 60px;
-    text-align: center;
-    line-height: 80px;
-   }
-
-   
-   h4{
-       color: $celeste;
-   }
-
-.gallery{
     margin: 80px 0;
     padding: 80px 0;
     display: flex;
@@ -387,55 +260,162 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    &__wrap{
+        width: 80%;
+        margin: auto;
+    
+        @include tablet{
+            width: 100%;
+        }
+    
+        @include movil{
+            width: 95%;
+        }
+    }
+
+    &__header{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    
+        @include movil{
+            flex-wrap: wrap;
+            width: 90%;
+        }
+    
+        @include tablet{
+            width: 90%;
+        }
+    }
+
+    
+    &__titulo{
+        margin: auto;
+        padding-bottom: 30px;
+        color: white;
+        letter-spacing: 1px;
+
+        @include movil{
+            margin: 50px 0 0;
+            font-size: 40px;
+        }
+
+        @include tablet{
+            padding-left: 100px;
+            font-size: 35px;
+        }
+    }
+
+    .menu-btn{
+        position: absolute;
+        color: $celeste;
+        font-size: 20px;
+        margin: 0;
+        cursor: pointer;
+    
+        i{
+            margin-right: 20px;
+        }
+    }  
 }
+                                                                 /*SIDE BAR*/
+.side-bar{
+    background-color: rgba(41, 41, 41, 0.5);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    z-index: 1000;
 
-.wrapper{
-    width: 80%;
-    margin: auto;
+        @include movil{
+            width: 240px;
+        }
 
-    @include tablet{
-        width: 100%;
+    .menu{
+        width: 80%;
+        margin: 80px 0 80px 45px;
+    
+            @include movil{
+                width: 90%;
+                margin: 80px 0 80px 15px;
+            }
+
+        h4{
+            color: $celeste;
+        }
+
+        .item{
+            position: relative;
+            cursor: pointer;
+
+            a{
+                color: #fff;
+                font-size: 16px;
+                text-decoration: none;
+                display: block;
+                padding: 5px 10px;
+                line-height: 60px;
+              
+                i{
+                    margin-right: 15px;
+                }
+
+                .dropdown{
+                    position: absolute;
+                    right: 0;
+                    margin: 20px;
+                    transition: 0.3s ease;       
+                }
+            }
+
+            a:hover{
+                background: rgba(27, 27, 27, 0.603);
+                border-radius: 10px;
+                transition: 0.3s ease;
+            }
+
+            .sub-menu{
+                background: rgba(255, 255, 255, 0.1);
+                display: none;
+            
+                a{
+                    padding-left: 40px;
+                }
+            }
+        }
     }
 
-    @include movil{
-        width: 95%;
+    .rotate{
+        transform: rotate(90deg);
+    }
+
+    .close-btn{
+        position: absolute;
+        color: #fff;
+        font-size: 20px;
+        right: 0;
+        margin: 25px;
+        cursor: pointer;
     }
 }
+   
 
-.header-tienda{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    @include movil{
-        flex-wrap: wrap;
-        width: 90%;
-    }
-
-    @include tablet{
-        width: 90%;
-    }
+.side-bar.active{
+    left: 0;
 }
+   
 
-.section-header{
-    margin: auto;
-    padding-bottom: 30px;
-    color: white;
-    letter-spacing: 1px;
+/*---------------------------------------------------------GALERIA IMAGEN*/
 
-    @include movil{
-        margin: 50px 0 0;
-        font-size: 40px;
-    }
-
-    @include tablet{
-        padding-left: 100px;
-        font-size: 35px;
-    }
-}
 
 .content{
     padding: 10%;
@@ -526,5 +506,7 @@
     right: 0;
 
 }
+
+/*---------------------------------------------------------GALERIA IMAGEN CIERRA*/
 
 /*-------------------------------------------------------------------------------------TIENDA CIERRA*/
