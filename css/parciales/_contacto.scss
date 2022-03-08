@@ -27,6 +27,7 @@
     font-size: 50px;
     font-weight: 500;
     padding-bottom: 50px;
+    z-index: 0;
 
     @include tablet{
         font-size: 40px;
