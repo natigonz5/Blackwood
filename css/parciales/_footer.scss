@@ -24,14 +24,14 @@
         padding: 2em;
     }
 
-    .footer__izq,.footer__centro,.footer__der{
+    &__izq,&__centro,&__der{
         display: inline-block;
         vertical-align: top;
     }
 
     /* Footer izq */
 
-    .footer__izq{
+    &__izq{
         width: 35%;
         font-family: 'Nunito', sans-serif;
 
@@ -44,41 +44,42 @@
             width: 90%;
         }
 
-        .footer__iconos{
-            color:  #ffffff;
-            margin: 20px 0 18px;
-            padding: 0;
-    
-            a{
-                display:inline-block;
-        
-            }
+    }
 
-            img:hover{
-                transform:scale(1.1);
-            }
+    &__iconos{
+        color:  #ffffff;
+        margin: 20px 0 18px;
+        padding: 0;
+
+        a{
+            display:inline-block;
+    
         }
 
-        .footer__blackwood{
-            margin: 0;
-            font-size: 14px;
-
-            @include tablet{
-                font-size: 16px;
-            }
-
-            @include movil{
-                width: 70%;
-                font-size: 13px;
-            }
+        img:hover{
+            transform:scale(1.1);
         }
     
+    }
+
+    &__blackwood{
+        margin: 0;
+        font-size: 14px;
+
+        @include tablet{
+            font-size: 16px;
+        }
+
+        @include movil{
+            width: 70%;
+            font-size: 13px;
+        }
     }
 
 
     /* Footer centro */ 
 
-    .footer__centro{
+    &__centro{
         width: 30%;
 
         @include tablet{
@@ -139,7 +140,7 @@
 
     /* Footer derecha */ 
 
-    .footer__der{
+    &__der{
         width: 22%;
 
         @include tablet{
@@ -150,34 +151,32 @@
         @include movil{
             padding-top: 40px;
             width: 90%;
-        }
-
-        .footer__acerca{
-            line-height: 20px;
-            color:  #92999f;
-            font-size: 13px;
-            font-weight: normal;
-            margin: 0;
-            font-family: 'Nunito', sans-serif;
-
-            @include tablet{
-                font-size: 17px;
-            }
-        }
-
-        .footer__acerca span{
-            display: block;
-            color:  #ffffff;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            font-family: 'Poppins', sans-serif;
-
-            @include tablet{
-            font-size: 17px;
-            }
-        }
-
+        }     
     }
 
+    &__acerca{
+        line-height: 20px;
+        color:  #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+
+        @include tablet{
+            font-size: 17px;
+        }
+    }
+
+    &__acerca span{
+        display: block;
+        color:  #ffffff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+
+        @include tablet{
+        font-size: 17px;
+        }
+    }
 }
