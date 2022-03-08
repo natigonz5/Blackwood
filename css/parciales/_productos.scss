@@ -229,7 +229,7 @@
 }
 
 .slide:nth-child(6){
-    background:  url(../multimedia/imagen/a.jpg);
+    background:  url(../multimedia/imagen/f.jpg);
     background-position: center center;
 }
 
@@ -244,6 +244,7 @@
 
    .side-bar{
     background-color: rgba(41, 41, 41, 0.5);
+
     backdrop-filter: blur(15px);
     width: 290px;
     height: 100vh;
@@ -513,6 +514,10 @@
     top: 100;
     right: 100%;
     transition: all 0.5s ease;
+
+    p{
+        width: 80%;
+    }
 }
 
 

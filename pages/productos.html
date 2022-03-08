@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -51,17 +52,17 @@
 
     <main> 
         <div class="contenedor">  <!--PRESENTACIÓN-->
-            <div class="contenedor__texto">
-                <h1 class="contenedor__titulo">RENOVÁ TU HOGAR _</h1>
-                <p class="contenedor__desc">Contamos con gran variedad de muebles y artículos de decoración para darle a tu casa el cambio que necesita!</p>
+            <div class="contenedor__texto" >
+                <h1 class="contenedor__titulo" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">RENOVÁ TU HOGAR _</h1>
+                <p class="contenedor__desc" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Contamos con gran variedad de muebles y artículos de decoración para darle a tu casa el cambio que necesita!</p>
             </div>
-            <div class="contenedor__silla">
+            <div class="contenedor__silla" data-aos="fade-up" data-aos-duration="1200">
                 <img src="../multimedia/imagen/sillaprincipal.png" alt="Silla principal">
             </div>
         </div>   <!--PRESENTACIÓN CIERRA-->
 
     <section class="slider">
-        <div class="texto-cont">
+        <div class="texto-cont" data-aos-easing="ease-in" data-aos="fade" data-aos-duration="1200" data-aos-delay="500">
             <h4>Productos del mes</h4>
             <p>Estos muebles de diseño fueron los más vendidos en los últimos 30 días! Adquirilos en nuestra tienda online</p>
         </div>
@@ -77,7 +78,7 @@
   
        
 
-    <section class="gallery"> 
+    <section class="gallery" data-aos-easing="ease-in" data-aos="fade" data-aos-duration="1200" data-aos-delay="0"> 
         <div class="wrapper">
             <div class="header-tienda">
                 <div class="menu-btn">
@@ -139,13 +140,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="main-content">
+            <div class="main-content" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
                 <div class="box">
                     <img src="../multimedia/imagen/a.jpg" alt="mueble1">
                     <div class="img-text">
                         <div class="content">
-                            <h3>Mesa ratona</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <h3>Estatería Broken</h3>
+                            <p>Disruptiva y fragmentada, hecha de Guatambú - 200x160</p>
                         </div>
                     </div>
                 </div>
@@ -153,8 +154,8 @@
                     <img src="../multimedia/imagen/b.jpg" alt="mueble2">
                     <div class="img-text">
                         <div class="content">
-                            <h3>Mesa ratona</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <h3>Silla Tokio</h3>
+                            <p>Modelo tapizado parcialmente, fabricada en Cedro -80x60</p>
                         </div>
                     </div>
                 </div>
@@ -162,17 +163,17 @@
                     <img src="../multimedia/imagen/c.jpg" alt="mueble3">
                     <div class="img-text">
                         <div class="content">
-                            <h3>Mesa ratona</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <h3>Silla Smooth</h3>
+                            <p>Suave y delicada, hecha en madera Paraíso - 75x65</p>
                         </div>
                     </div>
                 </div>
                 <div class="box">
-                    <img src="../multimedia/imagen/b.jpg" alt="mueble4">
+                    <img src="../multimedia/imagen/d.jpg" alt="mueble4">
                     <div class="img-text">
                         <div class="content">
-                            <h3>Mesa ratona</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <h3>Silla Waldorf</h3>
+                            <p>Curvas amable y un fino tapizado, realizada en Grapia - 80x60</p>
                         </div>
                     </div>
                 </div>
@@ -180,8 +181,8 @@
                     <img src="../multimedia/imagen/g.jpg" alt="mueble5">
                     <div class="img-text">
                         <div class="content">
-                            <h3>Mesa ratona</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <h3>Escritorio Rustic</h3>
+                            <p>Ensamblado práctico y rápido, fabricado en Pino - 150x60</p>
                         </div>
                     </div>
                 </div>
@@ -189,8 +190,8 @@
                     <img src="../multimedia/imagen/f.jpg" alt="mueble6">
                     <div class="img-text">
                         <div class="content">
-                            <h3>Mesa ratona</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            <h3>Estantería Rubik</h3>
+                            <p>Fuertes contrastes, combinación de Pino y Melamina blanca - 220x170 </p>
                         </div>
                     </div>
                 </div>
@@ -237,7 +238,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120,
+    delay: 500,
+    duration: 400,
+    easing: 'ease'
+  });
+</script>
 <script type="text/javascript">
     $(document).ready(function(){
       //jquery for toggle sub menus

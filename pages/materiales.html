@@ -45,46 +45,57 @@
         </nav>
     </header> <!--barra navegación cierra-->
     
-    <main> <!--grid-->
+    <main> <!--carrusel-->
         <section class="material">
             <h1 class="material__titulo">Elegí tu material!</h1>
             <p class="material__texto">Aquí podrás informarte acerca de las propiedades y ventajas de los materiales disponibles para que tengas una experiencia única y elijas el adecuado.</p>
         </section>
-            <div class="grid">
-                <div class="grid__item grid__item--1">
-                    <img src="../multimedia/imagen/paraiso.jpeg" alt="paraiso">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos-easing="ease-in" data-aos="fade" data-aos-duration="1200" data-aos-delay="500">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../multimedia/imagen/paraiso.jpeg" alt="paraiso">
+                <div class="carousel-caption">
+                  <h5>Maderas semiduras</h5>
+                  <p>El término madera semi-dura se refiere a las ramas en el árbol creciente que están comenzando a madurar. Las ramas se doblan y rompen, pero no son tan duras y quebradizas como las ramas que se considera que son de madera dura.</p>
                 </div>
-                <div class="grid__item grid__item--2">
-                    <h3 class="grid__titulo">Maderas semiduras</h3>
-                    <p class="grid__texto">El término madera semi-dura se refiere a las ramas en el árbol creciente que están comenzando a madurar. Las ramas se doblan y rompen, pero no son tan duras y quebradizas como las ramas que se considera que son de madera dura.</p>
-                    <p class="grid__info">+ INFO</p>
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/imagen/pino.jpg" alt="pino">
+                <div class="carousel-caption">
+                  <h5>Maderas blandas</h5>
+                  <p>Las maderas blandas resultan fáciles de trabajar y son dúctiles, resultan ligeras, baratas y fáciles de conseguir. Como desventajas, poseen menos durabilidad que las duras, menor atractivo estético que las duras y en su tratamiento, se astillan fácilmente.</p>
                 </div>
-                <div class="grid__item grid__item--3">
-                    <h3 class="grid__titulo">Maderas blandas</h3>
-                    <p class="grid__texto">Las maderas blandas resultan fáciles de trabajar y son dúctiles, resultan ligeras, baratas y fáciles de conseguir. Como desventajas, poseen menos durabilidad que las duras, menor atractivo estético que las duras y en su tratamiento, se astillan fácilmente.</p>
-                    <p class="grid__info">+ INFO</p>
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/imagen/aglomerado.jpg" alt="aglomerado">
+                <div class="carousel-caption">
+                  <h5>Aglomerados</h5>
+                  <p>Se conoce como aglomerado a la tabla de madera que se forma a partir de la unión de virutas con cola. El proceso para fabricar estas planchas tiene diferentes características, dependiendo del tamaño de los fragmentos y del tipo de pegamento utilizados.</p>
                 </div>
-                <div class="grid__item grid__item--4">
-                    <img src="../multimedia/imagen/pino.jpg" alt="pino">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/imagen/enchapado.jpg" alt="enchapado">
+                <div class="carousel-caption">
+                  <h5>Enchapados</h5>
+                  <p>Las placas enchapadas son tableros recubiertos por ambas caras con chapas de maderas naturales seleccionadas y perfectamente unidas entre sí.</p>
                 </div>
-                <div class="grid__item grid__item--5">
-                    <img src="../multimedia/imagen/aglomerado.jpg" alt="aglomerado">
-                </div>
-                <div class="grid__item grid__item--6">
-                    <h3 class="grid__titulo grid__titulo--font">Aglomerados</h3>
-                    <p class="grid__texto">Se conoce como aglomerado a la tabla de madera que se forma a partir de la unión de virutas con cola. El proceso para fabricar estas planchas tiene diferentes características, dependiendo del tamaño de las virutas o de los fragmentos y del tipo de pegamento utilizados.</p>
-                    <p class="grid__info">+ INFO</p>
-                </div>
-                <div class="grid__item grid__item--7">
-                    <h3 class="grid__titulo">Enchapados</h3>
-                    <p class="grid__texto">Las placas enchapadas son tableros recubiertos por ambas caras con chapas de maderas naturales seleccionadas y perfectamente unidas entre sí.</p>
-                    <p class="grid__info">+ INFO</p>
-                </div>
-                <div class="grid__item grid__item--8">
-                    <img src="../multimedia/imagen/enchapado.jpg" alt="enchapado">
-                </div>
-            </div>   <!--cierra-->
-
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     <section> <!--FOOTER-->
         <footer class="footer">               

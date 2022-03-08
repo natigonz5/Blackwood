@@ -1,15 +1,21 @@
 @import "./media-queries";
+@import "./variables";
 
 /*MATERIALES*/
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
 
 .material{
     background-color: $fondo;
-    height: 250px;
+    height: 450px;
     width: 100%;
     text-align: center;
+    animation: fadeIn 2s;
 
     @include movil{
-        height: 150px;
+        height: 60vh;
     }
 
     &__titulo{
@@ -28,7 +34,7 @@
 
         @include movil{
             letter-spacing: 10px;
-            font-size: 25px;
+            font-size: 30px;
             padding-top: 100px;
         }
     }
@@ -45,196 +51,86 @@
                 
         @include tablet{
             max-width: 75%;
+            font-size: 22px;
         }
 
         @include movil{
+            padding-top: 20px;
             max-width: 90%;
-            font-size: 12px;
+            font-size: 18px;
         }
     }
 }
 
-.grid{
-    row-gap: 30px;
-    width: 1100px;
-    margin: auto;
-    margin-top: 200px;
-    display: grid;
-    grid-template-columns: 500px 600px;
-    grid-template-rows: repeat(4, 384px);
-    border-color:#75ccb1;
 
-    @include tablet{
-        width: 750px;
-        grid-template-columns: 365px 365px;
-        grid-template-rows: repeat(4, 225px);
-        padding-top: 50px;
-    }
+.carousel{
+    z-index: 0;
+    width: 80vw;
+    margin: auto;
+    filter: saturate(1);
 
     @include movil{
-        width: 95%;
-        row-gap: 10px;
-        grid-template-columns: 100%;
-        grid-template-rows: 190px 190px 190px 190px;
-        padding-top: 0px;
+        height: 100vh;
+        width: 100vw;
     }
 
-
-    .grid__item {
-        background-color: black;
-        border-radius:20px;
-
-        &--1, &--4, &--5, &--8{
-
-            img{
-                border-radius: 20px;            
-            }
-            
-            @include tablet{
-                  object-fit: cover;
-
-                img{
-                    width: 100%;
-                    border-radius: 20px;            
-                }
-            }
-
-            @include movil{
-                object-fit: cover;
-
-                img{
-                    width: 100%;
-                    border-radius: 20px;            
-                }
-            }
-
-        }
-
-        &--2, &--3, &--6, &--7{
-        padding-left: 60px;
-        padding-top: 80px;
-        padding-bottom: 70px;
-        width: 600px;
-        border:1px solid #75ccb1;
-
-            @include tablet{
-                width: 370px;
-                padding-left: 30px;
-                padding-top: 30px;
-            }
-
-            @include movil{
-                width: 100%;
-                padding-left: 20px;
-                padding-top: 15px;
-                padding-bottom: 40px;
-            }
-        }
-    
-        &--2, &--6{
-        box-shadow: -5px 0px 8px 0px rgba(0, 0, 0, 0.493);
-
-            @include movil{
-                box-shadow: 0;
-            }
-        }
-
-
-
-        &--2 .grid__texto{
-            width: 68%;
-
-            @include tablet{
-                width: 87%;
-            }
-
-            @include movil{
-                width: 90%;
-            }
-        }
-        
-        &--3 .grid__texto{
-            width: 70%;
-
-            @include tablet{
-                width: 90%;
-            }
-
-            @include movil{
-                width: 90%;
-            }
-        }
-        
-        &--6 .grid__texto{
-            width: 69%;
-
-            @include tablet{
-                width: 88%;
-            }
-
-            @include movil{
-                width: 90%;
-            }
-        }
-        
-        &--7 .grid__texto{
-            width: 64%;
-
-            @include tablet{
-                width: 90%;
-            }
-
-            @include movil{
-                width: 90%;
-            }
-        }
-    }
-     
-    .grid__titulo{
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: 25px;    
+    img{
+        width: 100%;
+        object-fit: cover;
 
         @include movil{
-            font-size: 18px;    
-            font-weight: 700;
-
+            height: 100vh;
         }
-    }
 
-    .grid__texto{
-        font-family: 'Nunito', sans-serif;
-        font-size: 15px;
-        color: rgb(156, 156, 156);
-        padding-top: 15px;
-        padding-bottom: 40px;
         @include tablet{
-            height: 100px;
-            overflow: scroll;
-            margin-bottom: 10px;
+            height: 100vh;
         }
+    }
+
+    .carousel-caption{
+        padding-top: 50px;
+        background-color: rgba(0, 0, 0, 0.568);
+        backdrop-filter: blur(5px);
+        margin: auto;
+        height: 50%;
 
         @include movil{
-            height: 100px;
-            overflow: scroll;
-            margin-bottom: 10px;
+            height: 65vh;
+            padding: 10px;
         }
 
-        
-    }
+        @include tablet{
+            padding: 25px;
+            height: 65vh;
+        }
 
-    .grid__info{
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-    }
+        h5{
+            color: $blanco;
+            font-family: 'Poppins', 'sans-serif';
+            font-size: 2.2em;
 
-    .grid__info:hover{
-        color: rgb(255, 199, 79);
-        font-weight: 500;
-        font-size: 17px;
-    }
+            @include movil{
+                font-size: 1.8em;
+            }
+        }
 
+        p{
+            color: $blanco;
+            font-size: 1.2em;
+            width: 70%;
+            margin:auto;
+
+            @include movil{
+                font-size: 1.05em;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            @include tablet{
+                font-size: 1.5em;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
 }
-
